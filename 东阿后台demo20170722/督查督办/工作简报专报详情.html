@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>工作任务</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/clash.css" />
+		<link rel="stylesheet" type="text/css" href="JQDate/css/lq.datetimepick.css"/>
+	</head>
+
+	<body>
+		<div class="layout-top">
+			<div class="layout-top-wave" id="topwave">
+				<div class="layer topwave wave1" data-depth="0.02"></div>
+				<div class="layer topwave wave2" data-depth="0.08"></div>
+				<div class="layer topwave wave3" data-depth="0.14"></div>
+				<div class="layer topwave wave4" data-depth="0.20"></div>
+			</div>
+			<div id="J_header">
+				<div class="logo">
+                <h1>
+                    <a href="#"><img src="img/title.png" alt=""></a></h1>
+            </div>
+            <div class="sub-title pull-left" style=" line-height: 88px;"><h2 style=" line-height: 84px; color: #fff; font-weight: bolder; font-family: microsoft yahei; font-size: 22px; margin-left: 20px; letter-spacing: 2px; text-shadow: 0 1px 2px rgba(0,0,0,.4);"></h2></div>
+				<ul class="main-toolbar">
+					<li class="main-toolbar-item">
+						<a class="user-bar" href="javascript:void(0)">
+							<div class="user-img m-r-sm">
+								<img src="img/userimg.png" alt="">
+							</div>
+							<div class="user-info">
+								<p>
+									<span class="user-name">艾萍</span>
+								</p>
+								<p><i class="icons-12 icons-12-date m-r-xs"></i>最后登录日期：1天以前</p>
+							</div>
+						</a>
+					</li>
+					 
+                    <li class="main-toolbar-item main-btn-holder">
+                    <div data-toggle="dropdown" class="enter-button ">
+                        <a aria-haspopup="true" aria-expanded="false" class="avatar dropdown-toggle">
+                            <i class="icons-32 icons-32-gear"></i>
+                        </a>
+                    </div>
+                    <ul style="margin-left:-30px; min-width:100px" class="dropdown-menu">
+                        <li>
+                            <a id="g-change-pwd" href="#" data-toggle="modal" data-target="#modal-2">修改密码</a>
+                        </li>
+                        <li>
+                            <a href="">退出登录</a>
+                        </li>
+                    </ul>
+                </li>
+				</ul>
+			</div>
+		</div>
+		 <!------------------------------导航开始------------------------------>
+	    <div class="layout-nav">
+	    	<ul>
+	    		<li><a href="../VPN专区/VPN专区.html">首页</a></li>
+	    		<li><a href="../工作平台/通知列表.html">工作平台</a></li>
+	    		<li><a href="../学习平台/通知公告管理.html">学习平台</a></li>
+	    		<li><a href="../考核平台/考核指标.html">考核平台</a></li>
+	    		<li><a href="../管理平台/信息管理/pages/management.html">管理平台</a></li>
+	    		<li class="nav-active"><a href="../督查督办/用户管理.html">督查督办</a></li>
+	    	</ul>
+	    </div>
+    <!------------------------------导航结束------------------------------>
+		<div class="layout-left">
+			<div class="sub-nav" id="sub-nav">
+				<p class="sub-nav-title">
+					<span class="hide-minify">
+						管理平台
+					</span>
+					<!--<a class="minify-toggle" href="javascript:void(0);"><i class="icons-12 icons-12-draw gray" title="收起侧栏"></i></a>-->
+				</p>
+				<ul class="sub-nav-list">
+					<li class="sub-nav-li">
+						<a class="sub-nav-a collapsed" data-toggle="collapse" href="javascript:void(0)">
+							<i class="icons-22 icons-22-jc-zdjz"></i>
+							<span class="firnav-txt">用户信息管理 </span>
+							<i class="fl-r icons-12 icons-12-down gray"></i>
+						</a>
+						<ul class="seclv-nav-ul collapse in">
+							<li class="seclv-nav-li">
+								<a href="../督查督办/用户管理.html"><i class="icons-12 icons-12-subnav gray"></i> 用户管理 </a>
+							</li>
+						</ul>
+					</li>
+					<li class="sub-nav-li">
+						<a class="sub-nav-a collapsed" data-toggle="collapse" href="javascript:void(0)">
+							<i class="icons-22 icons-22-person"></i>
+							<span class="firnav-txt">权限管理 </span>
+							<i class="fl-r icons-12 icons-12-down gray"></i>
+						</a>
+						<ul class="seclv-nav-ul collapse in">
+							<li class="seclv-nav-li">
+								<a href="权限管理.html"><i class="icons-12 icons-12-subnav gray"></i> 权限管理</a>
+							</li>
+						</ul>
+					</li>
+					<li class="sub-nav-li active">
+						<a class="sub-nav-a collapsed" data-toggle="collapse" href="javascript:void(0)">
+							<i class="icons-22 icons-22-person"></i>
+							<span class="firnav-txt">台账分析 </span>
+							<i class="fl-r icons-12 icons-12-down gray"></i>
+						</a>
+						<ul class="seclv-nav-ul collapse in">
+							<li class="seclv-nav-li">
+								<a href="电子台账.html"><i class="icons-12 icons-12-subnav gray"></i> 电子台账</a>
+							</li>
+							<li class="seclv-nav-li">
+								<a href="工作简报专报.html"><i class="icons-12 icons-12-subnav gray"></i> 工作简报专报</a>
+							</li>
+							<li class="seclv-nav-li">
+								<a href="工作进度表.html"><i class="icons-12 icons-12-subnav gray"></i> 工作进度表</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="layout-content">
+			<div class="e-main">
+				<div class="mian-box-content">
+					<div class="row margin-b10">
+						<div class="col-xs-12">
+							<div class="row-space">
+								<div class="e-box float-e-margins" style="border: 0;">
+									<div style="width: 100%; line-height: 50px; font-size: 20px;">教育部举行国家工作人员宪法宣誓仪式</div>
+									<div style=" text-indent: 2em; line-height: 30px; color: #666; font-size: 14px;">
+										7月13日，教育部在京首次举行国家工作人员宪法宣誓仪式。教育部党组书记、部长陈宝生监誓。
+根据国家有关规定和《教育部任命的国家工作人员宪法宣誓实施办法》（简称“《实施办法》”），《实施办法》印发以来新任命的机关司处级干部和直属单位领导班子成员95人依法进行宪法宣誓。
+上午8时30分，教育部党组成员、部长助理刘大为宣布宪法宣誓仪式开始。全体起立，奏唱中华人民共和国国歌。领誓人手抚宪法，宣读誓词。其他宣誓人列队跟诵誓词。
+“我宣誓：忠于中华人民共和国宪法，维护宪法权威，履行法定职责，忠于祖国、忠于人民，恪尽职守、廉洁奉公，接受人民监督，为建设富强、民主、文明、和谐的社会主义国家努力奋斗！”
+宣誓后，陈宝生发表讲话指出，宪法宣誓制度是党对宪法认识再提升的重要表现，是建设法治政府、全面推进依法治国的时代要求，也是巩固宪法地位、弘扬宪法精神，将法治理念深入人心的有力举措。誓言是我们对国家、对人民、对事业、对自己作出的郑重承诺，也是今后履行职责和义务的基本准则，是庄重的约定、监督的凭据，也是行动的命令、前进的目标。
+陈宝生对参加宣誓的干部提出三点希望。一是坚定理想信念，永葆忠诚本色。要深入学习贯彻习近平总书记系列重要讲话精神和治国理政新理念新思想新战略，时刻把坚定理想信念放在最重要的位置，补好精神之“钙”，锤炼过硬品质，坚定不移地与以习近平同志为核心的党中央保持高度一致，以绝对的忠诚、高度的自觉，全身心投入中国特色社会主义的伟大实践。二是弘扬法治精神，推进依法治教。要牢记宪法和法律赋予的神圣职责，牢记党和人民对教育工作者的重托，全面贯彻党的教育方针，不断提高运用法治思维和法治方式做好教育改革发展稳定各项工作的能力，为全面推进依法治教、促进教育治理体系和治理能力现代化作出应有的贡献。三是强化责任担当，再创新的业绩。要牢记政治使命和政治责任，进一步增强责任意识和担当精神，恪守岗位职责和工作责任，切实加强自身修养，自觉接受各种监督，以更加过硬的本领、更加昂扬的斗志去迎接新的挑战。
+教育部党组成员和相关司局主要负责人出席仪式。
+									</div>
+									<div style=" margin-top: 20px; text-indent: 2em;line-height: 30px; color: #666; font-size: 14px;">
+										7月13日，教育部在京首次举行国家工作人员宪法宣誓仪式。教育部党组书记、部长陈宝生监誓。
+根据国家有关规定和《教育部任命的国家工作人员宪法宣誓实施办法》（简称“《实施办法》”），《实施办法》印发以来新任命的机关司处级干部和直属单位领导班子成员95人依法进行宪法宣誓。
+上午8时30分，教育部党组成员、部长助理刘大为宣布宪法宣誓仪式开始。全体起立，奏唱中华人民共和国国歌。领誓人手抚宪法，宣读誓词。其他宣誓人列队跟诵誓词。
+“我宣誓：忠于中华人民共和国宪法，维护宪法权威，履行法定职责，忠于祖国、忠于人民，恪尽职守、廉洁奉公，接受人民监督，为建设富强、民主、文明、和谐的社会主义国家努力奋斗！”
+宣誓后，陈宝生发表讲话指出，宪法宣誓制度是党对宪法认识再提升的重要表现，是建设法治政府、全面推进依法治国的时代要求，也是巩固宪法地位、弘扬宪法精神，将法治理念深入人心的有力举措。誓言是我们对国家、对人民、对事业、对自己作出的郑重承诺，也是今后履行职责和义务的基本准则，是庄重的约定、监督的凭据，也是行动的命令、前进的目标。
+陈宝生对参加宣誓的干部提出三点希望。一是坚定理想信念，永葆忠诚本色。要深入学习贯彻习近平总书记系列重要讲话精神和治国理政新理念新思想新战略，时刻把坚定理想信念放在最重要的位置，补好精神之“钙”，锤炼过硬品质，坚定不移地与以习近平同志为核心的党中央保持高度一致，以绝对的忠诚、高度的自觉，全身心投入中国特色社会主义的伟大实践。二是弘扬法治精神，推进依法治教。要牢记宪法和法律赋予的神圣职责，牢记党和人民对教育工作者的重托，全面贯彻党的教育方针，不断提高运用法治思维和法治方式做好教育改革发展稳定各项工作的能力，为全面推进依法治教、促进教育治理体系和治理能力现代化作出应有的贡献。三是强化责任担当，再创新的业绩。要牢记政治使命和政治责任，进一步增强责任意识和担当精神，恪守岗位职责和工作责任，切实加强自身修养，自觉接受各种监督，以更加过硬的本领、更加昂扬的斗志去迎接新的挑战。
+教育部党组成员和相关司局主要负责人出席仪式。
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--重置密码 弹窗2-->
+		<div class="modal fade" id="modal-2" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div id="info" class="e-box m-b">
+						<div class="e-box-title">
+							<h2>修改密码</h2>
+							<div class="e-box-toolbar">
+								<button type="button" class="close m-t-sm" data-dismiss="modal">
+									<span aria-hidden="true">&times;</span>
+									<span class="sr-only">Close</span></button>
+							</div>
+						</div>
+						<div class="e-box-content">
+							<div class="p-sm padding-b0">
+								<div class="clearfix e-form">
+									<div class="form-group clearfix margin-b0">
+										<div class="form-item">
+											<span class="form-item-name">输入新密码：</span>
+											<input id="" type="text" placeholder="" class="form-item-input">
+										</div>
+
+										<div class="form-item">
+											<span class="form-item-name">确认新密码：</span>
+											<input id="" type="text" placeholder="" class="form-item-input">
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<hr class="m-t-sm m-b-sm">
+							<div class="etal-c m-b-sm">
+								<a href="#" class="btn btn-info">保存</a>
+								<div class="btn btn-danger" data-dismiss="modal">取消</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 弹窗3 -->
+		<div class="modal fade" id="modal-3" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div id="info" class="e-box m-b">
+						<div class="e-box-title">
+							<h2>提示</h2>
+							<div class="e-box-toolbar"><button type="button" class="close m-t-sm" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button></div>
+						</div>
+						<div class="e-box-content">
+							<div class="p-sm">是否删除？</div>
+							<hr class="m-t-sm m-b-sm">
+							<div class="etal-c m-b-sm">
+								<a href="#" class="btn btn-info">确定</a>
+								<div class="btn btn-danger" data-dismiss="modal">取消</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.10.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- Scripts -->
+		<script src="JQDate/js/selectUi.js" type="text/javascript"></script>
+		<script src="JQDate/js/lq.datetimepick.js" type="text/javascript"></script>
+		<script src="JQDate/JQDate.js" type="text/javascript"></script>
+		<script src="js/deploy/parallax.js"></script>
+		<script>
+			// Pretty simple huh?
+			var scene = document.getElementById('topwave');
+			var parallax = new Parallax(scene);
+			$('.sub-nav-li .sub-nav-a').closest('.sub-nav-li').find('ul.collapse').collapse('hide');
+			$('.sub-nav-a[data-toggle="collapse"]').on('click', function() {
+				$('.sub-nav-li .sub-nav-a').closest('.sub-nav-li').find('ul.collapse').collapse('hide');
+				$(this).closest('.sub-nav-li').find('ul.collapse').collapse('toggle');
+			})
+			
+			$('.minify-toggle').on('click', function() {
+				$('body').toggleClass('layout-minify')
+			})
+		</script>
+		<script>
+        window.onload = function() {
+            $('.table-choose').prop('checked', true);
+            var isChoosed = false;
+            $('body').on('click', '#chooseAll', function() {
+                isChoosed = !isChoosed;
+                $('.table-choose').prop("checked", isChoosed);
+            });
+        }
+    	</script>
+	</body>
+
+</html>

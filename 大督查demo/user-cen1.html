@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>阅读</title>
+
+	<link rel="stylesheet" type="text/css" href="css/ui.css">
+	<link rel="stylesheet" type="text/css" href="css/user-cen.css"/>
+	<link rel="stylesheet" href="css/headAndNav.css">
+	<!--<script src="js/vue.2.4.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/axios.min.js" type="text/javascript" charset="utf-8"></script>-->
+	<style type="text/css">
+		.dss{
+			float: left;
+			margin-left: 0.7rem;
+		}
+		.psp{
+			/*background: url();*/
+			background: url(img/dang.png) center center / cover no-repeat;
+		}
+		.sjh{
+			margin-top: 0.7rem;
+		}
+		.sjh p{
+			text-align: left;
+			color: #FFF;
+			margin-top: 0.1rem;
+		}
+		.aui-menu-list li {
+    color: #888;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    padding: 7px 15px;
+    text-align: left;
+}
+.aui-btn-block {
+    display: block;
+    width: 100%;
+    padding: 0px 0;
+}
+	</style>
+</head>
+<body>
+	<div id="app">
+	
+	<div class="zntban">
+		<div class="dss">
+			<p class="psp"></p>
+			<p class="psp1"><a href="login.html">张三四</a></p>
+		</div>
+		<div class="dss sjh">
+			<p class="psp1">性别:男</p>
+			<p class="psp1">年龄:27岁</p>
+			<p class="psp1">所属部门:组织部</p>
+		</div>	
+		</div>
+	<div class="aui-container">
+		<div class="aui-page">
+			<div class="aui-text-top aui-l-content aui-l-content-clear">
+				<div class="devider b-line"></div>
+				<div class="aui-menu-list aui-menu-list-clear">
+					<ul>
+						<li class="b-line">
+							<a href="dangzuzhi.html">
+								<div class="aui-icon"><img src="img/icon1-1.png"></div>
+								<h3>组织机构</h3>
+								<div class="aui-time"><i class="aui-jump"></i></div>
+							</a>
+						</li>
+						<li class="b-line">
+							<a href="">
+								<div class="aui-icon"><img src="img/icon1-2.png"></div>
+								<h3>待办事务</h3>
+								<div class="aui-time"><i class="aui-jump"></i></div>
+							</a>
+						</li>
+						<li class="b-line" @click="tuichu()">
+							<a>
+								<div class="aui-icon"><img src="img/icon1-3.png"></div>
+								<h3>办结任务</h3>
+								<div class="aui-time"><i class="aui-jump"></i></div>
+							</a>
+						</li>
+						<li class="b-line">
+							<a href="">
+								<div class="aui-icon"><img src="img/icon1-4.png"></div>
+								<h3>催办任务</h3>
+								<div class="aui-time"><i class="aui-jump"></i></div>
+							</a>
+						</li>
+						<li class="b-line">
+							<a href="">
+								<div class="aui-icon"><img src="img/icon1-5.png"></div>
+								<h3>版本信息</h3>
+								<div class="aui-time"><i class="aui-jump"></i></div>
+							</a>
+						</li>
+						<li class="b-line" @click="tuichu()">
+							<a>
+								<div class="aui-icon"><img src="img/icon1-6.png"></div>
+								<h3>关于我们</h3>
+								<div class="aui-time"><i class="aui-jump"></i></div>
+							</a>
+						</li>
+						<li class="b-line" @click="tuichu()">
+							<a>
+								<div class="aui-icon"><img src="img/icon1-7.png"></div>
+								<h3>解除绑定</h3>
+								<div class="aui-time"><i class="aui-jump"></i></div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="nav">
+			<a class="nav_a1" href="index.html">首页</a>
+			<a class="nav_a3" href="work1.html">工作</a>
+			<a class="nav_a4" href="dangzuzhi.html">组织</a>
+			<a class="nav_a5 nav_on" href="user-cen1.html">我的</a>
+		</nav>
+    <div class="aui-content-padded">	
+    	 <p><a href="login.html" class="aui-btn aui-btn-danger aui-btn-block aui-btn-sm" style="background: #E3403E;">退出登录</a></p>
+    </div>
+	</div>
+</body>
+<script type="text/javascript">
+//	var usid=sessionStorage.getItem('use');
+//	    console.log(usid);
+//		
+//	var vm=new Vue({
+//				el:"#app",
+//				data:{
+//					datas:{},
+//					usid:usid
+////					arr:['index.html','xiaoxi.htnl','xuexi.html','work1.html','user-cen1.html']
+//				},
+//				mounted:function (){
+//					
+//				},
+//				methods:{
+//					tuichu:function (){
+//						sessionStorage.removeItem('use');
+//						window.location.href='index.html';
+//					}
+//				}
+//			});
+</script>
+	<script type="text/javascript">
+		var html = document.getElementsByTagName("html")[0];
+		var width = document.documentElement.clientWidth || document.body.clientWidth;
+		var f = (100 / 640) * width; //先有个比例这里用的20/520，的比例
+		html.style.fontSize = f + 'px';
+		document.body.style.display = 'block';
+		window.onresize = function() {
+			var width = document.documentElement.clientWidth || document.body.clientWidth;
+			var f = (100 / 640) * width; //先有个比例这里用的20/520，的比例
+			html.style.fontSize = f + 'px';
+		}
+
+	</script>
+</html>

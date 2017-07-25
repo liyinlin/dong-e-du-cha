@@ -1,0 +1,196 @@
+.lylist{
+	width: 100%;
+	padding:0 10px;
+}
+.ly-uls{
+	width: 100%;
+}
+.lymuica{
+	margin-bottom: 0;
+}
+.ly-uls li{
+	border-bottom: 1px solid #cdcdcd;
+	padding: 18px 0;
+	font-size: .24rem;
+}
+.ly-uls li span{
+	padding-left:15px ;
+	
+}
+.ly-uls li span:nth-child(1){
+	color: #333;
+	float: left;
+}
+.ly-uls li span:nth-child(2){
+	color: #999;
+	width: 60%;
+	display: inline-block;
+}
+/*活动报名人员*/
+.mui-card-header{
+	color: #333;
+	padding-left: 15px;
+}
+.mt0{
+	margin-top: 0;
+	border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 15px;
+}
+.mui-card-header:after {
+    top: auto;
+    bottom: 0;
+    background-color:#FFFFFF ;
+}
+.mui-card-content-inner {
+   color: #999;
+   padding:0 15px;
+   text-align:justify;
+}
+.lyimg img{
+	width: 48%;
+}
+.lyimg img:nth-child(1){
+	margin-right: 10px;
+}
+/*.mui-card-content{
+	border-bottom: 1px solid #cdcdcd;
+	padding-bottom: 10px;
+}*/
+.mr0{
+	padding-right:0 ;
+}
+.mr0 a{
+	float: right;
+	color: #999;
+	font-size: 14px;
+}
+.content li .img {
+	text-align: center;
+}
+
+.content li .img img {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+.content .name {
+    word-break: keep-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.24rem;
+    color: #4982ed;
+}
+/*点赞*/
+.lyzan{
+	width: 100%;
+	margin-top: .3rem;
+	border: 0.01rem solid #cccdd1;
+	text-align: center;
+	overflow: hidden;
+}
+.lyzan div{
+	width: 33%;
+	line-height:.6rem;
+	float: left;
+}
+.lyzan div:nth-child(2){
+	border-left: 0.01rem solid #cccdd1; 
+	border-right: 0.01rem solid #cccdd1; ;
+}
+.lyzan .icon{
+	vertical-align: middle;
+	margin-right: .1rem;
+}
+.lyzan .lyred{
+	color: red;
+}
+/*评论区css*/
+.fl {
+    float: left;
+}
+.question_list a{ text-decoration:none;}
+.question_list .expert{ font-size:12pt; color:#507daf;}
+.question_list .expert .img{ float:left; width:30pt; height: 30pt; margin-right:5pt;border-radius:15pt; background-size:100% 100%; background-repeat:no-repeat;}
+.question_list .expert span{ font-size:10pt; background-color:#FFA337; border-radius:5px; color:#fff; padding:0 3px; line-height:25px;}
+.question_list .time{font-size: .24rem;color:#999999;}
+.question_list li{/*margin-top:15pt;*/ border-bottom:#EDEDED solid 1px; padding: 0.2rem 0;overflow: hidden;}
+.question_list .detail{ font-size:.3rem; color:#363636;/*word-wrap: break-word;display:block;white-space:nowrap; text-overflow:ellipsis;overflow:hidden; */}
+.question_list .show{ font-size:12pt; color:#507daf; text-align:right;}
+.question_list .show a{font-size:12pt; color:#507daf; text-decoration: underline;}
+
+.down_bg{background:#2DEF94 url("../img/down_bg.png") no-repeat bottom fixed!important;background-size:100%; text-align:center;}
+.iphone, .android{ width:262px; height:60px; margin: 0 auto; display:block;}
+.iphone{ background:url(../img/down_button_iphone.png) no-repeat center; text-indent:99999999;}
+.android{background:url(../img/down_button_android.png) no-repeat center;}
+
+
+.lypss{
+	width: 90%;
+    float: right;
+}
+.expert .ing img {
+	width: 0.7rem;
+	height: 0.7rem;
+	border-radius: 50%;
+	
+}
+.ism{
+	width: 0.8rem;
+	height: 0.36rem;
+}
+.dl{
+	margin-left: 0.1rem;
+}
+.expert{
+	overflow: hidden;
+}
+.question_list{
+	padding-bottom: 1.2rem;
+}
+/*评论框css*/
+.zh-infor-foot{
+	width: 100%;
+	height: 1rem;
+	background: #f9f9f9;
+	position: fixed;
+	z-index: 20;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0.2rem;
+	box-sizing: border-box;
+}
+.zh-infor-foot input[type='text']{
+	width: 75%;
+	border: 1px solid #eee;
+	height: 0.6rem;
+	border-radius: 5px;
+	background: url(../img/pinglun2.png) no-repeat 0.2rem center #fff;
+	background-size: 0.25rem;
+	font-size: 0.25rem;
+	float: left;
+	padding-left: 10%;
+}
+.zh-infor-foot input[type='button']{
+	width: 20%;
+	height: 0.6rem;
+	font-size: 0.25rem;
+	color: #fff;
+	background: #ED0009 ;
+	border: none;
+	border-radius: 5px;
+	float: right;
+}
+/*视频播放页*/
+.mt44{
+	/*margin-top:44px ;*/
+	margin: 44px 0 0 0;
+}
+.lytv{
+	width: 100%;
+}
+.lybor{
+	border-left: 0px;
+	border-right: 0px;
+	margin-top: 0;
+}

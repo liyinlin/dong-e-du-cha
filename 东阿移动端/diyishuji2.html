@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html style="font-size: 100px;">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>第一书记</title>
+	<link rel="stylesheet" href="css/mui.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" href="css/buchong.css">
+	<link rel="stylesheet" href="css/headAndNav.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />	
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+	<script type="text/javascript" src="js/mui.min.js"></script>
+	<style type="text/css">
+		html,body{
+			background: #f0f0f0;
+		}
+		body{
+			padding-bottom: 0;
+		}
+		.mui-bar {
+			    position: static !important;
+			}
+			.mui-input-row label {
+			    font-family: 'Helvetica Neue',Helvetica,sans-serif;
+			    line-height: 1.1;
+			    float: left;
+			    width: 28%;
+			    padding: 11px 0px 0px 10px;
+			}
+			.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea {
+			    float: left;
+			    width: 60%;
+			    margin-bottom: 0;
+			    padding-left: 0;
+			    border: 0;
+			    padding: 0;
+			}
+			.mui-btn-blue, .mui-btn-primary, input[type=submit] {
+			    color: #fff;
+			  width: 30%;
+			  border: 1px solid #ff6400;
+			  background:#ff6400;
+			}
+			.info-form-addus h3 {
+			    background: #f0f0f0;
+			    line-height: 40px;
+			    color: #666;
+			    padding-left: 15px;
+			    font-weight: normal;
+			    font-size: 16px;
+			}
+			.mui-input-row .mui-btn {
+			   padding: 0;
+			    width: 60%;
+			    font-size: 16px;
+			    color:#757575;
+			}
+			.mui-checkbox input[type=checkbox], .mui-radio input[type=radio] {
+			    position: absolute;
+				left: 50%;
+			  
+			}
+			.cis{
+				height: auto !important; 
+				padding: 10px 0;
+			}
+			.cis label{
+				float: left;
+			}
+			.cis div{
+				width: 70%;
+				float: left;
+				color: #999;
+			}
+			.mui-input-row span{
+				color: #ED0009;
+			}
+			.mui-input-row .btns{
+				position: absolute;
+				right: 0;
+				top: 3px;
+				background: #ED0009;
+				color: #fff;
+				width: 23%;
+				padding: 7px 0;
+			}
+	</style>
+	
+</head> 
+<body>
+	<header id="header" class="mui-bar mui-bar-nav">
+		<a class="mui-icon mui-icon-left-nav mui-pull-left iconfont icon-fanhui" onclick="window.history.go(-1)"></a>
+		<h1 class="mui-title">第一书记工作</h1>
+		<a href="diyishuji3.html" class="mui-btn mui-pull-right mui-pj" style="background: none; color: #fff;font-size: 15px; border: none;">提交</a>
+	</header>
+	<form class="mui-input-group info-form-addus" style="margin: 0.2rem 0;">
+			<div class="mui-input-row">
+				<label><span>*</span>工作范畴:</label>
+				<input type="text" placeholder="第一书记">
+			</div>
+			<div class="mui-input-row">
+				<label><span>*</span>主题:</label>
+				<input type="text" placeholder="请输入主题">
+			</div>
+			<div class="mui-input-row">
+				<label><span>*</span>内容:</label>
+				
+				<input type="text" placeholder="请输入内容">
+			</div>
+			
+		</form>
+		<form class="mui-input-group info-form-addus" style="margin: 0.2rem 0;">
+			<div class="mui-input-row">
+				<label><span>*</span>经纬度:</label>
+				<input type="text" placeholder="请选择参与人">
+				<button type="button" class="mui-btn mui-btn-danger btns" >重新获取</button>
+			</div>
+			<div class="mui-input-row">
+				<label style="color: #ED0009; width: 40%;">正在获取位置...</label>
+				
+			</div>
+			
+		</form>
+		<img style="width: 100%;" src="img/paiz.png"/>
+</body>
+<script src="js/shrink.js"></script>
+<script type="text/javascript">
+	//mui初始化
+	$(".mui-pj").click(function(e) {
+		//e.detail.gesture.preventDefault(); //修复iOS 8.x平台存在的bug，使用plus.nativeUI.prompt会造成输入法闪一下又没了
+		var btnArray = ['取消', '确定'];
+		mui.prompt('','','工作评价', btnArray, function(e) {
+			if (e.index == 1) {
+			} else {
+			}
+		})
+	});
+</script>
+</html>

@@ -1,0 +1,220 @@
+.by-l {
+	float: left;
+}
+
+.by-r {
+	float: right;
+}
+
+
+/*表单页*/
+
+.info-form {
+	padding: 5px 25px;
+}
+
+.info-form h3 {
+	font-size: 14px;
+	color: #D8222F;
+	font-weight: 600;
+	margin: 15px 0px;
+}
+
+.info-form input {
+	line-height: 26px;
+	height: 26px;
+	border: 1px solid #ccc;
+	width: 220px;
+	float: left;
+	font-size: 13px;
+	border-radius: 5px;
+}
+
+.info-form .item {
+	line-height: 28px;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
+.info-form .item label {
+	font-size: 13px;
+	text-align: right;
+	width: 120px;
+	display: block;
+	float: left;
+	color: #333;
+}
+
+.info-form .item label span {
+	color: #D8222F;
+}
+
+.info-form button {
+	background:#ff6400;
+	color: #fff;
+	line-height: 36px;
+	width: 260px;
+	border: none 0;
+	font-size: 14px;
+	border-radius: 4px;
+	margin: 20px auto 50px;
+	display: block;
+}
+
+.info-form button:hover {
+	cursor: pointer;
+}
+
+.info-form .sex-check input {
+	width: auto;
+}
+
+.info-form .sex-check .sex {
+	width: auto;
+	margin: 0px 10px;
+}
+
+.info-form textarea {
+	border: 1px solid #ddd;
+}
+
+.info-form-2 input {
+	height: 20px;
+	width: 146px;
+	line-height: 20px;
+}
+
+.info-form-2 .item {
+	height: 24px;
+}
+
+.info-form-2 .item-textarea {
+	height: auto;
+}
+
+.info-form-2 .item-textarea textarea {
+	padding: 8px;
+	color: #666;
+}
+
+.info-form-2 .upload-btn {
+	width: 75px;
+	background: #D8222F;
+	color: #fff;
+	border: none 0;
+}
+
+.info-form-2 .upload-btn:hover {
+	cursor: pointer;
+}
+
+.info-form-addus {
+	padding: 0px;
+}
+
+.info-form-addus h3 {
+	background: #c1c1c1;
+	line-height: 30px;
+	color: #fff;
+	padding-left: 15px;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.add-nav {
+	overflow: hidden;
+	margin-left: 10px;
+}
+
+.add-nav ul li.current {
+	position: relative;
+	background-color: #D8222F;
+	color: #fff;
+}
+
+.add-nav ul li.current a {
+	color: #fff;
+	font-weight: bold;
+	background-color: #D8222F;
+}
+
+.add-nav ul li a:hover {
+	background: #D8222F;
+	color: #fff;
+}
+
+.add-line {
+	border-bottom: 1px solid #D8222F;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.add-nav a {
+	display: block;
+	color: #333;
+	font-weight: 700;
+	float: left;
+	padding: 3px 6px;
+	margin: 15px 5px 0 0;
+	font-size: 14px;
+}
+
+.info-form-addus .item {
+	margin-left: 0;
+}
+
+.info-form-addus .service-classify {
+}
+.info-form-addus .service-classify {
+    float: left;
+    max-width:240px;
+}
+
+.info-form-addus .service-classify .service-item {
+	margin-right: 5px;
+	width: auto;
+	line-height: 30px;
+}
+
+.info-form-addus .service-classify .service-item input {
+	width: 16px;
+}
+
+.field-item label {
+	overflow: hidden;
+	background: #eee;
+	display: block;
+	width: 110px;
+	float: left;
+	/*margin: 5px;*/   
+	height: 30px;
+	/*padding: 5px;*/
+	line-height: 30px;
+}
+
+.field-item label input {
+	width: 16px;
+}
+
+.field-item {
+	padding-left: 8px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.item input.yan-input {
+	line-height: 26px;
+	height: 26px;
+	border: 1px solid #ccc;
+	width: 116px;
+	float: left;
+	font-size: 13px;
+}
+
+.item a.yan {
+	margin-left: 10px;
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+	background-color: #ccc;
+	color: #333;
+}

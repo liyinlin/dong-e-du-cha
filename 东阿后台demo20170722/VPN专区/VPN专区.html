@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>东阿智慧党建云平台综合管理平台</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/clash.css">
+</head>
+
+<body>
+    <div class="layout-top">
+        <div class="layout-top-wave" id="topwave">
+            <div class="layer topwave wave1" data-depth="0.02"></div>
+            <div class="layer topwave wave2" data-depth="0.08"></div>
+            <div class="layer topwave wave3" data-depth="0.14"></div>
+            <div class="layer topwave wave4" data-depth="0.20"></div>
+      </div>
+        <div id="J_header">
+            <div class="logo">
+                <h1>
+                    <a href="#"><img src="img/title.png" alt=""></a>
+                </h1>
+            </div>
+            <div class="sub-title pull-left" style=" line-height: 88px;"><h2 style=" line-height: 84px; color: #fff; font-weight: bolder; font-family: microsoft yahei; font-size: 22px; margin-left: 20px; letter-spacing: 2px; text-shadow: 0 1px 2px rgba(0,0,0,.4);">&nbsp;&nbsp;&nbsp;</h2></div>
+            <ul class="main-toolbar">
+               <li class="main-toolbar-item">
+                    <a class="user-bar" href="javascript:void(0)">
+                        <div class="user-img m-r-sm">
+                            <img src="img/userimg.png" alt="">
+                        </div>
+                        <div class="user-info">
+                            <p>
+                                <span class="user-name">艾萍（中共东阿县委组织部）</span>
+                            </p>
+                            <p><i class="icons-12 icons-12-date m-r-xs"></i>最后登录日期：1天以前</p>
+                        </div>
+                    </a>
+              </li>
+                <li class="main-toolbar-item main-btn-holder">
+                    <div data-toggle="dropdown" class="enter-button ">
+                        <a aria-haspopup="true" aria-expanded="false" class="avatar dropdown-toggle">
+                            <i class="icons-32 icons-32-gear"></i>
+                        </a>
+                    </div>
+                    <ul style="margin-left:-30px; min-width:100px" class="dropdown-menu">
+                        <li>
+                            <a id="g-change-pwd" href="#" data-toggle="modal" data-target="#modal-2">修改密码</a>
+                        </li>
+                        <li>
+                            <a href="">退出登录</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+     <div class="layout-nav">
+	    	<ul>
+	    		<li class="nav-active"><a href="../VPN专区/VPN专区.html">首页</a></li>
+	    		<li><a href="../工作平台/通知列表.html">工作平台</a></li>
+	    		<li><a href="../学习平台/通知公告管理.html">学习平台</a></li>
+	    		<li><a href="../考核平台/考核指标.html">考核平台</a></li>
+	    		<li><a href="../管理平台/信息管理/pages/management.html">管理平台</a></li>
+	    		<li><a href="../督查督办/用户管理.html">督查督办</a></li>
+	    	</ul>
+	    </div>
+    <div class="layout-content" style="left: 0;">
+        <div class="guidepost">
+            <span class="guidepost-span">位置：</span>
+            <ul class="guidepost-con">
+                <li class="guidepost-item">
+                    <a href="#">首页 <!--<i class="icons-12 icons-12-arrowr gray"></i>--></a>
+                </li>
+                <li class="guidepost-item"></li>
+            </ul>
+        </div>
+        <div class="e-main">
+            <div class="mian-box-content padding-20">
+                <div class="row margin-b10">
+                    <!--<div class="clearfix echart-box margin-t10">
+						<div class="echart-item-box w-30">
+							<div class="echart-item">
+								<div id="bt1" style="height:300px;"></div>
+							</div>
+						</div>
+						<div class="echart-item-box w-70">
+							<div class="echart-item back-f border-box border">
+								<div id="main" style="height:300px;"></div>
+							</div>
+						</div>
+					</div>-->
+					<div class="col-xs-6">
+                        <div class="row-space">
+                            <div class="e-box float-e-margins">
+                            	<div class="e-box-title">
+                                    <h2>2016年任务完成率</h2>  
+                                </div>
+                                
+                            	<div class="clearfix echart-box margin-t10">
+									<div class="echart-item-box f-n">
+										<div class="echart-item" style="border:none">
+											<div id="bt1" style="height:275px;" class="padding-l30 padding-t10"></div>
+										</div>
+									</div>
+								</div>
+                            </div>
+                        </div>
+                   </div>
+                    <div class="col-xs-6">
+                        <div class="row-space">
+                            <div class="e-box float-e-margins">
+                            	<div class="e-box-title">
+                                    <h2>2016年任务完成情况</h2>  
+                                </div>
+                                
+                            	<div class="clearfix echart-box margin-t10">
+									<div class="echart-item-box f-n">
+										<div class="echart-item" style="border:none">
+											<div id="main" style="height:275px;" class="padding-l30 padding-t10"></div>
+										</div>
+									</div>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-b10">
+                    <div class="col-xs-12">
+                        <div class="row-space">
+                            <div class="e-box">
+                                <div class="e-box-title with-tab">
+                                    <h2>工作任务</h2>
+                                    <span><a href="">更多»</a> </span>
+                                    <div class="e-box-toolbar pull-left with-tab padding-l30">
+                                        <ul id="myTabs-3" role="tablist" class="nav nav-tabs e-tabs-subline">
+                                            <li role="presentation" class="active">
+                                                <a id="home-tab" href="#home-2" data-toggle="tab">全部</a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a href="#tab2-2" data-toggle="tab">待接收任务</a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a href="#tab3-2" data-toggle="tab">待处理任务</a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a href="#tab4-2" data-toggle="tab">已完成任务</a>
+                                            </li>
+                                            <li role="presentation" class="">
+                                                <a href="#tab5-2" data-toggle="tab">待签收通知</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="e-tab-content">
+                                    <div id="myTabContent" class="tab-content">
+                                        <div id="home-2" role="tabpanel" class="tab-pane active">
+                                            <table class="e-table e-clborder">
+                                                <tbody>
+                                                    <tr>
+                                                        <th width="5%" class="text-center">#</th>
+                                                        <th>任务等级</th>
+                                                        <th>任务标题</th>
+                                                        <th>完成时间</th>
+                                                        <th class="text-center">负责人</th>
+                                                        <th width="10%" class="text-center">状态</th>
+                                                        <th width="10%" class="text-center">操作</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td>重要</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-12 10:20</td>
+                                                        <td class="text-center">张三</td>
+                                                        <td class="text-center">待接收</td>
+                                                        <td class="text-center">
+                                                            <button class="btn" data-toggle="modal" data-target="#modal-1">接收</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">2</td>
+                                                        <td>紧急</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-11 08:10</td>
+                                                        <td class="text-center">李四</td>
+                                                        <td class="text-center">已下发</td>
+                                                        <td class="text-center">
+                                                            <button class="btn">查看</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">3</td>
+                                                        <td>重要</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-12 10:29</td>
+                                                        <td class="text-center">张三</td>
+                                                        <td class="text-center">待签收</td>
+                                                        <td class="text-center">
+                                                            <button class="btn">签收</button>
+                                                        </td> 
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">4</td>
+                                                        <td>紧急</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-19 10:20</td>
+                                                        <td class="text-center">李四</td>
+                                                        <td class="text-center">待处理</td>
+                                                        <td class="text-center">
+                                                            <button class="btn">查看</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">5</td>
+                                                        <td>重要</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-13 10:10</td>
+                                                        <td class="text-center">张三</td>
+                                                        <td class="text-center">已下发</td>
+                                                        <td class="text-center">
+                                                            <button class="btn">查看</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="tab2-2" role="tabpanel" class="tab-pane">
+                                            <table class="e-table e-clborder">
+                                                <tbody>
+                                                    <tr>
+                                                        <th width="5%" class="text-center">#</th>
+                                                        <th>任务等级</th>
+                                                        <th>任务标题</th>
+                                                        <th>完成时间</th>
+                                                        <th class="text-center">负责人</th>
+                                                        <th width="10%" class="text-center">状态</th>
+                                                        <th width="10%" class="text-center">操作</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td>重要</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-12 10:20</td>
+                                                        <td class="text-center">张三</td>
+                                                        <td class="text-center">待接收</td>
+                                                        <td class="text-center">
+                                                            <button class="btn" data-toggle="modal" data-target="#modal-1">接收</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">2</td>
+                                                        <td>紧急</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-11 08:10</td>
+                                                        <td class="text-center">李四</td>
+                                                        <td class="text-center">待接收</td>
+                                                        <td class="text-center">
+                                                            <button class="btn">接收</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">3</td>
+                                                        <td>重要</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-12 10:29</td>
+                                                        <td class="text-center">张三</td>
+                                                        <td class="text-center">待接收</td>
+                                                        <td class="text-center">
+                                                            <button class="btn">接收</button>
+                                                        </td> 
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">4</td>
+                                                        <td>紧急</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-19 10:20</td>
+                                                        <td class="text-center">李四</td>
+                                                        <td class="text-center">待接收</td>
+                                                        <td class="text-center">
+                                                            <button class="btn">接收</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">5</td>
+                                                        <td>重要</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-13 10:10</td>
+                                                        <td class="text-center">张三</td>
+                                                        <td class="text-center">待接收</td>
+                                                        <td class="text-center">
+                                                            <button class="btn">接收</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="tab3-2" role="tabpanel" class="tab-pane">
+                                            <table class="e-table e-clborder">
+                                                <tbody>
+                                                    <tr>
+                                                        <th width="5%" class="text-center">#</th>
+                                                        <th>任务等级</th>
+                                                        <th>任务标题</th>
+                                                        <th>完成时间</th>
+                                                        <th class="text-center">负责人</th>
+                                                        <th width="10%" class="text-center">状态</th>
+                                                        <th width="10%" class="text-center">操作</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td>重要</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-12 10:20</td>
+                                                        <td class="text-center">张三</td>
+                                                        <td class="text-center">待处理</td>
+                                                        <td class="text-center">
+                                                            <button class="btn" data-toggle="modal" data-target="#modal-1">接收</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">2</td>
+                                                        <td>紧急</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-11 08:10</td>
+                                                        <td class="text-center">李四</td>
+                                                        <td class="text-center">待处理</td>
+                                                        <td class="text-center">
+                                                            <button class="btn">接收</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">3</td>
+                                                        <td>重要</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-12 10:29</td>
+                                                        <td class="text-center">张三</td>
+                                                        <td class="text-center">待处理</td>
+                                                        <td class="text-center">
+                                                            <button class="btn">接收</button>
+                                                        </td> 
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">4</td>
+                                                        <td>紧急</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-19 10:20</td>
+                                                        <td class="text-center">李四</td>
+                                                        <td class="text-center">待处理</td>
+                                                        <td class="text-center">
+                                                            <button class="btn">接收</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">5</td>
+                                                        <td>重要</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-13 10:10</td>
+                                                        <td class="text-center">张三</td>
+                                                        <td class="text-center">待处理</td>
+                                                        <td class="text-center">
+                                                            <button class="btn">接收</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="tab4-2" role="tabpanel" class="tab-pane">
+                                            <table class="e-table e-clborder">
+                                                <tbody>
+                                                    <tr>
+                                                        <th width="5%" class="text-center">#</th>
+                                                        <th>任务等级</th>
+                                                        <th>任务标题</th>
+                                                        <th>完成时间</th>
+                                                        <th class="text-center">负责人</th>
+                                                        <th width="10%" class="text-center">状态</th>
+                                                        <th width="10%" class="text-center">操作</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td>重要</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-12 10:20</td>
+                                                        <td class="text-center">张三</td>
+                                                        <td class="text-center">已完成</td>
+                                                        <td class="text-center">
+                                                            <button class="btn" data-toggle="modal" data-target="#modal-1">查看</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">2</td>
+                                                        <td>紧急</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-11 08:10</td>
+                                                        <td class="text-center">李四</td>
+                                                        <td class="text-center">已完成</td>
+                                                        <td class="text-center">
+                                                            <button class="btn">查看</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">3</td>
+                                                        <td>重要</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-12 10:29</td>
+                                                        <td class="text-center">张三</td>
+                                                        <td class="text-center">已完成</td>
+                                                        <td class="text-center">
+                                                            <button class="btn">查看</button>
+                                                        </td> 
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">4</td>
+                                                        <td>紧急</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-19 10:20</td>
+                                                        <td class="text-center">李四</td>
+                                                        <td class="text-center">已完成</td>
+                                                        <td class="text-center">
+                                                            <button class="btn">查看</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">5</td>
+                                                        <td>重要</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-13 10:10</td>
+                                                        <td class="text-center">张三</td>
+                                                        <td class="text-center">已完成</td>
+                                                        <td class="text-center">
+                                                            <button class="btn">查看</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="tab5-2" role="tabpanel" class="tab-pane">
+                                            <table class="e-table e-clborder">
+                                                <tbody>
+                                                    <tr>
+                                                        <th width="5%" class="text-center">#</th>
+                                                        <th>任务等级</th>
+                                                        <th>任务标题</th>
+                                                        <th>完成时间</th>
+                                                        <th class="text-center">负责人</th>
+                                                        <th width="10%" class="text-center">状态</th>
+                                                        <th width="10%" class="text-center">操作</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td>重要</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-12 10:20</td>
+                                                        <td class="text-center">张三</td>
+                                                        <td class="text-center">待签收</td>
+                                                        <td class="text-center">
+                                                            <button class="btn" data-toggle="modal" data-target="#modal-1">签收</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">2</td>
+                                                        <td>紧急</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-11 08:10</td>
+                                                        <td class="text-center">李四</td>
+                                                        <td class="text-center">待签收</td>
+                                                        <td class="text-center">
+                                                            <button class="btn">签收</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">3</td>
+                                                        <td>重要</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-12 10:29</td>
+                                                        <td class="text-center">张三</td>
+                                                        <td class="text-center">待签收</td>
+                                                        <td class="text-center">
+                                                            <button class="btn">签收</button>
+                                                        </td> 
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">4</td>
+                                                        <td>紧急</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-19 10:20</td>
+                                                        <td class="text-center">李四</td>
+                                                        <td class="text-center">待签收</td>
+                                                        <td class="text-center">
+                                                            <button class="btn">签收</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">5</td>
+                                                        <td>重要</td>
+                                                        <td>东阿党委关于两会一课任务</td>
+                                                        <td>2016-8-13 10:10</td>
+                                                        <td class="text-center">张三</td>
+                                                        <td class="text-center">待签收</td>
+                                                        <td class="text-center">
+                                                            <button class="btn">签收</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row margin-b10">
+                   <div class="col-xs-12">
+                        <div class="row-space">
+                            <div class="e-box float-e-margins">
+                                <div class="e-box-title">
+                                    <h2>党建要闻</h2>
+                                    <span><a href="">更多»</a> </span>
+                                </div>
+                                <div class="e-box-content">
+                                    <ul class="dashed-line e-mini-list">
+                                        <li class="e-news-list clash">
+                                            <a href="#">持续加强两学一做学习教育工作督导力度持续加强两学一做学习教育工作督导力度</a>
+                                            <span style=" float:right;line-height: 24px; margin-right: 10px; color: #ccc;">2017-03-24 17:30:00</span>
+                                            <span style=" float:right;line-height: 24px; margin-right: 120px;">东阿县党委</span>
+                                        </li>
+                                        <li class="e-news-list clash">
+                                            <a href="#">持续加强两学一做学习教育工作督导力度持续加强两学一做学习教育工作督导力度</a>
+                                            <span style=" float:right;line-height: 24px; margin-right: 10px; color: #ccc;">2017-03-24 17:30:00</span>
+                                            <span style=" float:right;line-height: 24px; margin-right: 120px;">东阿县党委</span>
+                                        </li>
+                                        <li class="e-news-list clash">
+                                            <a href="#">持续加强两学一做学习教育工作督导力度持续加强两学一做学习教育工作督导力度持续加强两学一做学习教育工作督导力度</a>
+                                            <span style=" float:right;line-height: 24px; margin-right: 10px; color: #ccc;">2017-03-24 17:30:00</span>
+                                            <span style=" float:right;line-height: 24px; margin-right: 120px;">东阿县党委</span>
+                                        </li>
+                                        <li class="e-news-list clash">
+                                            <a href="#">持续加强两学一做学习教育工作督导力度</a>
+                                            <span style=" float:right;line-height: 24px; margin-right: 10px; color: #ccc;">2017-03-24 17:30:00</span>
+                                            <span style=" float:right;line-height: 24px; margin-right: 120px;">东阿县党委</span>
+                                        </li>
+                                        <li class="e-news-list clash">
+                                            <a href="#">持续加强两学一做学习教育工作督导力度持续加强两学一做学习教育工作督导力度持续加强两学一做学习教育工作督导力度</a>
+                                            <span style=" float:right;line-height: 24px; margin-right: 10px; color: #ccc;">2017-03-24 17:30:00</span>
+                                            <span style=" float:right;line-height: 24px; margin-right: 120px;">东阿县党委</span>
+                                        </li>
+                                        <li class="e-news-list clash">
+                                            <a href="#">持续加强两学一做学习教育工作督导力度</a>
+                                            <span style=" float:right;line-height: 24px; margin-right: 10px; color: #ccc;">2017-03-24 17:30:00</span>
+                                            <span style=" float:right;line-height: 24px; margin-right: 120px;">东阿县党委</span>
+                                        </li>
+                                        <li class="e-news-list clash">
+                                            <a href="#">持续加强两学一做学习教育工作督导力度持续加强两学一做学习教育工作督导力度</a>
+                                            <span style=" float:right;line-height: 24px; margin-right: 10px; color: #ccc;">2017-03-24 17:30:00</span>
+                                            <span style=" float:right;line-height: 24px; margin-right: 120px;">东阿县党委</span>
+                                        </li>
+                                        <li class="e-news-list clash">
+                                            <a href="#">持续加强两学一做学习教育工作督导力度</a>
+                                            <span style=" float:right;line-height: 24px; margin-right: 10px; color: #ccc;">2017-03-24 17:30:00</span>
+                                            <span style=" float:right;line-height: 24px; margin-right: 120px;">东阿县党委</span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 弹窗3 -->
+    <div class="modal fade" id="modal-3" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div id="info" class="e-box m-b">
+                    <div class="e-box-title">
+                        <h2>提示</h2>
+                        <div class="e-box-toolbar"><button type="button" class="close m-t-sm" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button></div>
+                    </div>
+                    <div class="e-box-content">
+                        <div class="p-sm">是否删除？</div>
+                        <hr class="m-t-sm m-b-sm">
+                        <div class="etal-c m-b-sm">
+                            <a href="#" class="btn btn-info">确定</a>
+                            <div class="btn btn-danger" data-dismiss="modal">取消</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--重置密码 弹窗2-->
+    <div class="modal fade" id="modal-2" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div id="info" class="e-box m-b">
+                    <div class="e-box-title">
+                        <h2>修改密码</h2>
+                        <div class="e-box-toolbar">
+                            <button type="button" class="close m-t-sm" data-dismiss="modal">
+									<span aria-hidden="true">&times;</span>
+									<span class="sr-only">Close</span></button>
+                        </div>
+                    </div>
+                    <div class="e-box-content">
+                        <div class="p-sm padding-b0">
+                            <div class="clearfix e-form">
+                                <div class="form-group clearfix margin-b0">
+                                    <div class="form-item">
+                                        <span class="form-item-name">输入新密码：</span>
+                                        <input id="" type="text" placeholder="" class="form-item-input">
+                                    </div>
+
+                                    <div class="form-item">
+                                        <span class="form-item-name">确认新密码：</span>
+                                        <input id="" type="text" placeholder="" class="form-item-input">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="m-t-sm m-b-sm">
+                        <div class="etal-c m-b-sm">
+                            <a href="#" class="btn btn-info">保存</a>
+                            <div class="btn btn-danger" data-dismiss="modal">取消</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery-1.10.2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- Scripts -->
+    <script src="js/deploy/parallax.js"></script>
+    <script src="js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+    <!--<script>
+        // Pretty simple huh?
+        var scene = document.getElementById('topwave');
+        var parallax = new Parallax(scene);
+        $('.sub-nav-li .sub-nav-a').closest('.sub-nav-li').find('ul.collapse').collapse('hide');
+        $('.sub-nav-a[data-toggle="collapse"]').on('click', function() {
+            $('.sub-nav-li .sub-nav-a').closest('.sub-nav-li').find('ul.collapse').collapse('hide');
+            $(this).closest('.sub-nav-li').find('ul.collapse').collapse('toggle');
+        })
+
+        $('.minify-toggle').on('click', function() {
+            $('body').toggleClass('layout-minify')
+        })
+    </script>-->
+    <script type="text/javascript">
+			var myChart1 = echarts.init(document.getElementById('bt1')); //在容器bt中放置
+			//参数设置
+			option = {
+				tooltip: {
+					formatter: "{a} <br/>{b} : {c}%"
+				},
+				toolbox: {
+					feature: {
+						restore: {},
+						saveAsImage: {}
+					}
+				},
+				series: [{
+					axisLine: { // 坐标轴线
+						lineStyle: { // 属性lineStyle控制线条样式
+							color: [
+								[0.09, '#ff4500'],
+								[0.82, '#1e90ff'],
+								[1, 'lime']
+							],
+							width: 5
+						}
+					},
+					splitLine: { // 分隔线
+						length: 4, // 属性length控制线长
+						lineStyle: { // 属性lineStyle（详见lineStyle）控制线条样式
+							width: 3,
+							color: '#fff'
+						}
+					},
+					name: '业务指标',
+					type: 'gauge',
+					detail: {
+						formatter: '{value}%'
+					},
+					data: [{
+						value: 50,
+						name: '完成率'
+					}]
+				}]
+			};
+
+			// setInterval(function() {
+			// 	option.series[0].data[0].value = (Math.random() * 100).toFixed(2) - 0;
+			// 	myChart1.setOption(option, true);
+			// }, 2000);
+			//		引用参数
+			myChart1.setOption(option);
+		</script>
+
+    <script type="text/javascript">
+			var myChart = echarts.init(document.getElementById('main'));
+			var option = {
+				// legend: {
+				//     data: ['转入','转出'],
+				//     align: 'left'
+				// },
+				title: {
+					text: "2016年任务完成率",
+					// textAlign:"center"
+					padding: [20, 0, 0, 280]
+				},
+				color: ['#693', '#e60000'],
+				backgroundColor: '#fff',
+				tooltip: {
+					trigger: 'axis',
+					axisPointer: { // 坐标轴指示器，坐标轴触发有效
+						type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+					}
+				},
+				grid: {
+					left: '3%',
+					right: '4%',
+					bottom: '3%',
+					containLabel: true
+				},
+				xAxis: [{
+					type: 'category',
+					data: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+					axisTick: {
+						alignWithLabel: true
+					}
+				}],
+				yAxis: [{
+					type: 'value'
+				}],
+				series: [{
+					name: '已完成',
+					type: 'bar',
+					barWidth: '20%',
+					data: [1053, 1245, 4197, 3082, 2669, 2069, 2717, 2797, 2148, 1546, null, null]
+				}, {
+					name: '未完成',
+					type: 'bar',
+					barWidth: '20%',
+					data: [102, 241, 653, 450, 372, 462, 406, 520, 585, 247, null, null]
+				}, ]
+			};
+			myChart.setOption(option);
+		</script>
+</body>
+
+</html>

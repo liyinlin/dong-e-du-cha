@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html style="font-size: 100px;">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>东阿县督查考核</title>
+	<link rel="stylesheet" href="css/mui.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" href="css/buchong.css">
+	<link rel="stylesheet" href="css/headAndNav.css" />
+	<!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->	
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+			html,body{
+			background: #f0f0f0;
+		}
+		.mui-bar {
+     position: relative !important; 
+    z-index: 10;
+    right: 0;
+    left: 0;
+    height: 44px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-bottom: 0;
+    background-color: #f7f7f7;
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,.85);
+    box-shadow: 0 0 1px rgba(0,0,0,.85);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+		.mui-btn {
+    padding: 10px;
+    background:#ED0009;
+}
+.mui-content {
+     background-color: #fff; 
+    -webkit-overflow-scrolling: touch;
+}
+.logo{
+	text-align: center;
+	
+}
+.logo img {
+	width: 25%;
+	margin: 30px auto;
+	display: block;
+}
+.mui-content {
+    background-color: #f0f0f0;}
+    .mui-input-group .mui-input-row {
+    height: 55px;
+}
+.mui-input-row label {
+    font-family: 'Helvetica Neue',Helvetica,sans-serif;
+    line-height: 1.1;
+    float: left;
+    width: 35%;
+    padding: 20px 15px;
+}
+#account,#password{
+	height: 55px;
+}
+.mui-bar-nav~.mui-content {
+    padding-top: 44px;
+    width: 90%;
+    margin: 0 auto;
+  
+}
+.grou1{
+    position: relative;
+    padding: 0;
+    border: 0;
+    background-color: #fff;
+    border-left: 1px solid #c8c7cc;
+     border-right: 1px solid #c8c7cc;
+}
+.czs{
+	width: 90%;
+	margin: 0 auto;
+}
+.bangding{
+	background: #fff;
+	border: 1px solid #ddd;
+	padding: 10px;	
+	line-height: 36px;
+}
+.bangding p{
+	color: #888 !important;
+	font-size: 16px !important;
+}
+.bangding p span{
+	font-size: 14px !important;
+	color: #454545 !important;
+}
+.bd{
+	padding-left: 35px !important;
+}
+.bd1{
+	background: url(img/bd1.png) no-repeat 12px center;
+	background-size: 18px auto;
+}
+.bd2{
+	background: url(img/bd2.png) no-repeat 12px center;
+	background-size: 18px auto;
+}
+.bd3{
+	background: url(img/bd3.png) no-repeat 12px center;
+	background-size: 18px auto;
+}
+.bd4{
+	background: url(img/bd4.png) no-repeat 12px center;
+	background-size: 18px auto;
+}
+	</style>
+</head> 
+<body>
+	<header id="header" class="mui-bar mui-bar-nav">
+		<a class="mui-icon mui-icon-left-nav mui-pull-left iconfont icon-fanhui" onclick="window.history.go(-1)"></a>
+		<h1 class="mui-title">绑定</h1>
+		<!--<button class="mui-btn mui-pull-right">报名</button>-->
+	</header>
+		<div class="mui-content" style="padding-top: 20px; width: 94%;">
+			<form id='login-form' class="mui-input-group grou1">
+				<div class="mui-input-row">
+					<label class="bd bd1">用户名</label>
+					<input id='account' type="text" class="mui-input-clear mui-input" placeholder="请输入账号">
+				</div>
+				<div class="mui-input-row">
+					<label class="bd bd2">密码</label>
+					<input id='password' type="password" class="mui-input-clear mui-input" placeholder="请输入密码">
+				</div>
+				<div class="mui-input-row">
+					<label class="bd bd3">手机号</label>
+					<input id='account' type="text" class="mui-input-clear mui-input" placeholder="请输入账号">
+				</div>
+				<div class="mui-input-row">
+					<label class="bd bd4">身份证</label>
+					<input id='account' type="text" class="mui-input-clear mui-input" placeholder="请输入账号">
+				</div>
+			</form>
+			<div class="mui-content-padded oauth-area">
+
+			</div>
+		</div>
+		<div class="mui-content-padded">
+			<a href="index.html" id='login' class="mui-btn mui-btn-block ">
+				<font style="color: white;">绑定</font></a>
+			
+		</div>
+		<div class="mui-content-padded bangding">
+			<p><span>设备类型：</span>Iphone7 plus</p>
+			<p><span>设备号码：</span>1330-1927-7762-6383-0202-0414</p>
+		</div>
+</body>
+<script src="js/shrink.js"></script>
+<script type="text/javascript">
+	document.getElementById("reg").addEventListener('tap', function() {
+				mui.openWindow({
+					id: 'reg',
+					url: 'reg.html',
+					show: {
+						duration: 300
+					},
+					waiting: {
+						autoShow: true
+					}
+				});
+			});
+					document.getElementById("forgetPassword").addEventListener('tap', function() {
+				mui.openWindow({
+					id: 'forget_password',
+					url: 'forget_password.html',
+					show: {
+						duration: 300
+					},
+					waiting: {
+						autoShow: true
+					}
+				});
+			});
+</script>
+</html>

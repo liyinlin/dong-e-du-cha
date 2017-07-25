@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>东阿县督查考核</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/buchong.css" />
+		<link rel="stylesheet" href="css/headAndNav.css">
+		<link rel="stylesheet" type="text/css" href="css/work.css" />
+
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+
+			<h1 class="mui-title">工作</h1>
+
+			<a class="mui-icon mui-icon-right-nav mui-pull-right iconfont icon-shezhi" onclick="window.history.go(-1)"></a>
+		</header>
+
+		<div class="mui-content" style="padding-top: 44px;" id="app">
+			<ul class="mui-table-view mui-grid-view mui-grid-9">
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<a href="gongzuolixiang1.html"><img src="img/goz1.png" alt="">
+						<div class="mui-media-body">工作立项</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<a href="jiaobanpaifa2.html"><img src="img/goz2.png" alt="">
+						<div class="mui-media-body">交办派发</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<a href="chengbanluoshi2.html"><img src="img/goz3.png" alt="">
+						<div class="mui-media-body">承办落实</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<a href="gongzuohuibao.html">
+						<img src="img/goz4.png" alt="">
+						<div class="mui-media-body">工作汇报</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<a href="dubancuiban.html"><img src="img/goz5.png" alt="">
+						<div class="mui-media-body">催办督办</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<a href="dongtaijiandu.html"><img src="img/goz6.png" alt="">
+						<div class="mui-media-body">动态监督</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<a href="gongzuopingjia.html"><img src="img/goz8.png" alt="">
+						<div class="mui-media-body">工作评价</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<a href="gongzuotaizhang.html"><img src="img/goz7.png" alt="">
+						<div class="mui-media-body">工作台账</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<nav class="nav">
+			<a class="nav_a1" href="index.html">首页</a>
+			<a class="nav_a3  nav_on" href="work1.html">工作</a>
+			<a class="nav_a4" href="dangzuzhi.html">组织</a>
+			<a class="nav_a5 " href="user-cen1.html">我的</a>
+		</nav>
+	</body>
+	<script type="text/javascript">
+		var html = document.getElementsByTagName("html")[0];
+		var width = document.documentElement.clientWidth || document.body.clientWidth;
+		var f = (100 / 640) * width; //先有个比例这里用的20/520，的比例
+		html.style.fontSize = f + 'px';
+//		document.body.style.display = 'block';
+		window.onresize = function() {
+			var width = document.documentElement.clientWidth || document.body.clientWidth;
+			var f = (100 / 640) * width; //先有个比例这里用的20/520，的比例
+			html.style.fontSize = f + 'px';
+		}
+	</script>
+
+</html>

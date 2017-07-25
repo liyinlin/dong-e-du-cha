@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />-->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/buchong.css" />
+		<link rel="stylesheet" type="text/css" href="css/list.css" />
+		<style type="text/css">
+		
+        i{
+        	font-style: normal;
+        }
+		</style>
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>-->
+		<!--<script src="js/vue.2.4.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/axios.min.js" type="text/javascript" charset="utf-8"></script>-->
+	</head>
+	<script type="text/javascript">
+		
+	</script>
+
+	<body style="display: none;">
+		<div id="app">
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-icon mui-icon-left-nav mui-pull-left iconfont icon-fanhui" onclick="window.history.go(-1)"></a>
+			<h1 class="mui-title">党务活动</h1>
+			<!--<button v-if="datas.status==2" class="mui-btn mui-pull-right">报名</button>
+			<button v-else-if="datas.status==3" class="mui-btn mui-pull-right">进行中</button>
+			<button v-else class="mui-btn mui-pull-right">已完成</button>-->
+		</header>
+		<div><div class="mui-card lymuica mt30"><img alt="" width="100%" src="img/tu43.jpg"></div> <div class="lylist"><div class="ly-uls"><ul><li><span>活动名称</span><span>“五规范、四提升” 台州基层党组织活动场所要这般来规范</span></li> <li><span>活动地址</span><span>玉环市</span></li> <li><span>报名时间</span><span><i>2017-07-12 15:22:47</i>至<i>2017-07-12 15:22:50</i></span></li> <li><span>活动时间</span><span><i>2017-07-12 15:22:51</i>至<i>2017-07-12 15:22:52</i></span></li> <li><span>承办单位</span><span>台州市基层党组</span></li></ul></div></div> <div class="mui-card lymuica mt0"><div class="mui-card-header">活动介绍</div> <div class="mui-card-content"><div class="mui-card-content-inner lyimg"><p>
+	7月10日下午，为进一步统筹做好台州市基层党组织活动场所规范化，推进基层党建工作的全面开展，台州市基层党组织活动场所规范提升工作现场会在玉环市召开。<br>
+	现场考察时，来自各县市区、部门的考察人员兵分两路，先后走访了玉环坎门街道鹰东社区、坎门街道花岩礁村、坎门街道党群服务中心、玉环广播电视台党群活动中心、芦浦镇尖山村、芦浦镇百丈村。</p>
+<p>
+	<img alt="" src="img/tu43.jpg" style="width: 300px; height: 200px;"></p></div></div></div> <div class="mui-card lymuica mt0"></div></div>
+		</div>
+	</body>
+<script type="text/javascript">
+	var html = document.getElementsByTagName("html")[0];
+var width = document.documentElement.clientWidth || document.body.clientWidth;
+var f = (100 / 640) * width; //先有个比例这里用的20/520，的比例
+html.style.fontSize = f + 'px';
+document.body.style.display = 'block';
+window.onresize = function() {
+	var width = document.documentElement.clientWidth || document.body.clientWidth;
+	var f = (100 / 640) * width; //先有个比例这里用的20/520，的比例
+	html.style.fontSize = f + 'px';
+}
+
+//function GetRequest() {   
+//				   var url = location.search; //获取url中"?"符后的字串   
+//				   var theRequest = new Object();   
+//				   if (url.indexOf("?") != -1) {   
+//				      var str = url.substr(1);   
+//				      strs = str.split("&");   
+//				      for(var i = 0; i < strs.length; i ++) {   
+//				         theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);   
+//				      }   
+//				   }   
+//				   return theRequest;   
+//			}   
+//			Request = GetRequest();
+//			var sid=Request['id'];
+//	var vm=new Vue({
+//				el:"#app",
+//				data:{
+//					name:'',
+//					pass:'',
+//					datas:{}
+//				},
+//				mounted:function (){
+//					this.cartView();
+//				},
+//				methods:{
+//					cartView:function (){
+//						var _this=this;
+//					axios.get('http://appcust.demo.fosung.com/newsController/getMeetingById',{
+//						    params: {
+//						      id:sid
+//						    }
+//						})
+//					  .then(function (response) {
+////					    console.log(response);
+//						_this.datas=response.data;
+//					  }).catch(function (error) {
+//						    console.log(error);
+//						  });
+//					}
+//				}
+//			});
+					//	报名人数
+//var swiper = new Swiper('.content2', {
+//	slidesPerView: 5,
+//	paginationClickable: true,
+//	spaceBetween: 5,
+//	freeMode: true
+//});
+</script>
+</html>

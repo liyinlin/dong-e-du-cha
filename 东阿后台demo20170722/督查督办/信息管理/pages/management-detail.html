@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>党员信息</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/top.css">
+    <link rel="stylesheet" type="text/css" href="../css/jsTree/default/style.css">
+    <link rel="stylesheet" href="../css/payment-back.css">
+    <style type="text/css" id="jstree-stylesheet"></style>
+
+</head>
+<style type="text/css">
+	.jstree-themeicon{
+		display: none !important;
+	}
+</style>
+<body>
+    <div class="layout-top">
+        <div class="layout-top-wave" id="topwave">
+            <div class="layer topwave wave1" data-depth="0.02"></div>
+            <div class="layer topwave wave2" data-depth="0.08"></div>
+            <div class="layer topwave wave3" data-depth="0.14"></div>
+            <div class="layer topwave wave4" data-depth="0.20"></div>
+        </div>
+        <div id="J_header">
+            <div class="logo">
+                <h1>
+                    <a href="#"><img src="../img/title.png" alt=""></a> </h1>
+            </div>
+            <div class="sub-title pull-left" style=" line-height: 88px;"><h2 style=" line-height: 84px; color: #fff; font-weight: bolder; font-family: microsoft yahei; font-size: 22px; margin-left: 20px; letter-spacing: 2px; text-shadow: 0 1px 2px rgba(0,0,0,.4);"></h2></div>
+            <ul class="main-toolbar">
+                <li class="main-toolbar-item">
+                    <a class="user-bar" href="javascript:void(0)">
+                        <div class="user-img m-r-sm">
+                            <img src="../img/userimg.png" alt="">
+                        </div>
+                        <div class="user-info">
+                            <p>
+                                <span class="user-name">王冲（中共东阿县委员会组织部）</span>
+                            </p>
+                            <p><i class="icons-12 icons-12-date m-r-xs"></i>最后登录日期：1天以前</p>
+                        </div>
+                    </a>
+                </li>
+                
+                <li class="main-toolbar-item main-btn-holder">
+                    <div data-toggle="dropdown" class="enter-button ">
+                        <a aria-haspopup="true" aria-expanded="false" class="avatar dropdown-toggle">
+                            <i class="icons-32 icons-32-gear"></i>
+                        </a>
+                    </div>
+                    <ul style="margin-left:-30px; min-width:100px" class="dropdown-menu">
+                        <li>
+                            <a id="g-change-pwd" href="#" data-toggle="modal" data-target="#modal-7">修改密码</a>
+                        </li>
+                        <li>
+                            <a href="">退出登录</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!------------------------------导航开始------------------------------>
+	    <div class="layout-nav">
+	    	<ul>
+	    		<li><a href="../../../VPN专区/VPN专区.html">首页</a></li>
+	    		<li><a href="../../../工作平台/通知列表.html">工作平台</a></li>
+	    		<li><a href="../../../学习平台/通知公告管理.html">学习平台</a></li>
+	    		<li><a href="../../../考核平台/考核指标.html">考核平台</a></li>
+	    		<li><a href="../pages/management.html">管理平台</a></li>
+	    		<li class="nav-active"><a href="../pages/management-detail.html">督察督办</a></li>
+	    	</ul>
+	    </div>
+    <!------------------------------导航结束------------------------------>
+    <div class="layout-left">
+			<div class="sub-nav" id="sub-nav">
+				<p class="sub-nav-title">
+					<span class="hide-minify">
+						管理平台
+					</span>
+					<!--<a class="minify-toggle" href="javascript:void(0);"><i class="icons-12 icons-12-draw gray" title="收起侧栏"></i></a>-->
+				</p>
+				<ul class="sub-nav-list">
+					<li class="sub-nav-li active">
+						<a class="sub-nav-a collapsed" data-toggle="collapse" href="javascript:void(0)">
+							<i class="icons-22 icons-22-jc-zdjz"></i>
+							<span class="firnav-txt">用户信息管理 </span>
+							<i class="fl-r icons-12 icons-12-down gray"></i>
+						</a>
+						<ul class="seclv-nav-ul collapse in">
+							<li class="seclv-nav-li">
+								<a href=""><i class="icons-12 icons-12-subnav gray"></i> 用户信息 </a>
+							</li>
+						</ul>
+					</li>
+					<li class="sub-nav-li">
+						<a class="sub-nav-a collapsed" data-toggle="collapse" href="javascript:void(0)">
+							<i class="icons-22 icons-22-person"></i>
+							<span class="firnav-txt">权限管理 </span>
+							<i class="fl-r icons-12 icons-12-down gray"></i>
+						</a>
+						<ul class="seclv-nav-ul collapse in">
+							<li class="seclv-nav-li">
+								<a href="management-detail.html"><i class="icons-12 icons-12-subnav gray"></i> 权限管理</a>
+							</li>
+						</ul>
+					</li>
+					<li class="sub-nav-li">
+						<a class="sub-nav-a collapsed" data-toggle="collapse" href="javascript:void(0)">
+							<i class="icons-22 icons-22-person"></i>
+							<span class="firnav-txt">台账分析 </span>
+							<i class="fl-r icons-12 icons-12-down gray"></i>
+						</a>
+						<ul class="seclv-nav-ul collapse in">
+							<li class="seclv-nav-li">
+								<a href="../../通知公告.html"><i class="icons-12 icons-12-subnav gray"></i> 台账分析</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+    <div class="layout-content">
+        <div class="e-main">
+            <div class="main-box e-box full">
+                <!--主窗口 title-->
+                
+                <!--主要内容区域-->
+                <div class="e-box-content">
+                    <div class="col-xs-3  h-100per">
+                        <div class="e-border-right e-tree-container">
+                            <div class="e-searchbar-holder">
+                                <input type="text" id="simple-search-input">
+                                <div class="sift-btn" title="筛选"> </div>
+                            </div>
+                            <div>
+                                <div class="e-tree e-auto jstree jstree-12 jstree-focused jstree-default" id="tree">
+                                    <ul>
+
+                                                <li><a href="management.html">中共东阿县委</a>
+                                                    <ul style="">
+                                                        <li><a href="management.html">中共东阿县姜楼镇党委</a>
+                                                            <ul style="">
+                                                                <li><a href="management.html">中共东阿县姜楼镇姜楼党总支</a>
+                                                                    <ul style="">
+                                                                        <li><a href="management.html">中共东阿县姜楼镇陈店村党支部</a>
+                                                                            <ul style="">
+                                                                                <li data-jstree='{"icon":"pm-male", "opened":true, "selected":true}'><a href="management-detail.html">XXX(书记)(委员)</a></li>
+                                                                                <li data-jstree='{"icon":"pm-female"}'><a href="#">XXX(委员)(委员)</a></li>
+                                                                                <li data-jstree='{"icon":"pm-male"}'><a href="#">XXX(委员)(主任)</a></li>
+                                                                                <li data-jstree='{"icon":"pm-male"}'><a href="#">XXX</a></li>
+                                                                                <li data-jstree='{"icon":"pm-male"}'><a href="#">XXX</a></li>
+                                                                                <li data-jstree='{"icon":"pm-male"}'><a href="#">XXX</a></li>
+                                                                                <li data-jstree='{"icon":"pm-female"}'><a href="#">XXX</a></li>
+                                                                                <li data-jstree='{"icon":"pm-female"}'><a href="#">XXX</a></li>
+                                                                                <li data-jstree='{"icon":"pm-female"}'><a href="#">XXX</a></li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><a href="#">中共东阿县姜楼镇陈店村党支部</a></li>
+                                                                        <li><a href="#">中共东阿县姜楼镇陈店村党支部</a></li>
+                                                                        <li><a href="#">中共东阿县姜楼镇陈店村党支部</a></li>
+                                                                        <li><a href="#">中共东阿县姜楼镇陈店村党支部</a></li>
+                                                                        <li><a href="#">中共东阿县姜楼镇陈店村党支部</a></li>
+                                                                        <li><a href="#">中共东阿县姜楼镇陈店村党支部</a></li>
+                                                                        <li><a href="#">中共东阿县姜楼镇陈店村党支部</a></li>
+                                                                        <li><a href="#">中共东阿县姜楼镇陈店村党支部</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><a href="#">中共东阿县姜楼镇联通党支部</a></li>
+                                                                <li><a href="#">中共东阿县姜楼镇经贸委党总支</a></li>
+                                                                <li><a href="#">中共东阿县姜楼镇教委党总支</a></li>
+                                                                <li><a href="#">中共东阿县姜楼镇卫生院党支部</a></li>
+                                                                <li><a href="#">中共东阿县姜楼镇农口联合党支部</a></li>
+                                                                <li><a href="#">中共东阿县姜楼镇派出所党支部</a></li>
+                                                                <li><a href="#">中共东阿县姜楼镇邮政支局党支部</a></li>
+                                                                <li><a href="#">中共东阿县姜楼镇供电所党支部</a></li>
+                                                                <li><a href="#">中共东阿县姜楼镇工商所党支部</a></li>
+                                                                <li><a href="#">中共东阿县姜楼镇供销社党支部</a></li>
+                                                                <li><a href="#">中共东阿县姜楼镇老干部党支部</a></li>
+
+                                                            </ul>
+                                                        </li>
+                                                      
+                                                    </ul>
+                                                </li>
+                                               
+                                            
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
+                        </div>
+                    </div>
+                    <!--树-->
+                    <div class="col-xs-9  h-100per e-auto" style="">
+                        <div class="e-clip-v w-100per e-h-inherit e-pos-r e-xxj-detail" id="angularApp" ui-view="">
+                            <div class="e-i-view-select e-border-bottom">
+                                <!--筛选器-->
+                                <div class="tabbable" style='display:none;'>
+                                    <!-- Only required for left/right tabs -->
+                                    <ul class="nav nav-tabs e-tabs-subline">
+                                        <li class="active">
+                                            <a href="#tab2" data-toggle="tab"> 党员 </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab1" data-toggle="tab"> 组织 </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab3" data-toggle="tab"> 单位 </a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content e-border-bottom">
+                                        <div class="tab-pane active" id="tab2">
+                                            <ul class="e-i-view-selectbar">
+                                                <!-- ngRepeat: f in filters.pm -->
+                                                <li class="active">
+                                                    <a href="#">全部</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">直管党员</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">历史党员</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">申请入党人员</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">入党积极分子</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">发展对象</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">预备党员</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">村居两委成员（非党员）</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">流入党员</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">历史村居两委成员</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane" id="tab1">
+                                            <ul class="e-i-view-selectbar">
+                                                <!-- ngRepeat: f in filters.org -->
+                                                <li class="active">
+                                                    <a href="#">全部</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">农村党建</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">街道社区党建</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">公有企业党建</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">非公有制企业党建</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">社会组织党建</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">机关党建</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">学校党建</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane" id="tab3">
+                                            <ul class="e-i-view-selectbar">
+                                                <!-- ngRepeat: f in filters.unit -->
+                                                <li class="active">
+                                                    <a href="#">全部</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix padding-5">
+                                        <span class="e-view-name fl-l">筛选条件：</span>
+                                        <ul class="clearfix fl-l">
+                                            <li class="e-tag"><span class="e-tag-name">人员类型：全部</span><span class="symbol glyphicon glyphicon-remove"></span></li>
+                                            <li class="e-tag"><span class="e-tag-name">组织机构：全部</span><span class="symbol glyphicon glyphicon-remove"></span></li>
+                                        </ul>
+                                        <div class="btn btn-xs">
+
+                                            <span>展开信息集导航</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--筛选-->
+
+                            <div class="row-space" style='margin-top: 25px;'>
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t1'>人员基本信息</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">编辑</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder ver-table">
+                                            <!--<thead>
+                                                <tr>
+                                                    <th width="5%">#</th>
+                                                    <th width="10%">姓名</th>
+                                                    <th>身份证号码</th>
+                                                    <th width="25%">所属社区</th>
+                                                    <th width="15%">审核状态</th>
+                                                    <th width="15%">操作</th>
+                                                </tr>
+                                            </thead>-->
+                                            <tbody>
+                                                <tr>
+                                                    <td>姓名</td>
+                                                    <td>XXX</td>
+                                                    <td>证件号码</td>
+                                                    <td>XXXXXXXXXXXXXX</td>
+                                                    <td>出生地</td>
+                                                    <td>山东省聊城市东阿县</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>性别</td>
+                                                    <td>男</td>
+                                                    <td>民族</td>
+                                                    <td>汉族</td>
+                                                    <td>家庭地址</td>
+                                                    <td>章丘姜楼</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>出生日期</td>
+                                                    <td>XXXX-XX-XX</td>
+                                                    <td>手机</td>
+                                                    <td></td>
+                                                    <td>家庭住宅电话</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>籍贯</td>
+                                                    <td>山东省聊城市东阿县</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-space">
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t2'>人员扩展信息</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">编辑</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder ver-table">
+                                            <!--<thead>
+                                                <tr>
+                                                    <th width="5%">#</th>
+                                                    <th width="10%">姓名</th>
+                                                    <th>身份证号码</th>
+                                                    <th width="25%">所属社区</th>
+                                                    <th width="15%">审核状态</th>
+                                                    <th width="15%">操作</th>
+                                                </tr>
+                                            </thead>-->
+                                            <tbody>
+                                                <tr>
+                                                    <td>年龄</td>
+                                                    <td>
+                                                        XX</td>
+                                                    <td>职级</td>
+                                                    <td></td>
+                                                    <td>个人身份</td>
+                                                    <td>农民</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>党龄</td>
+                                                    <td>9</td>
+                                                    <td>
+                                                        交纳党费标识</td>
+                                                    <td>正常交纳
+                                                    </td>
+                                                    <td>
+                                                        参加工作日期</td>
+                                                    <td>XXXX-XX-XX
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>最高学历</td>
+                                                    <td>XXXX
+                                                    </td>
+                                                    <td>
+                                                        生活困难标识</td>
+                                                    <td>
+                                                    </td>
+                                                    <td>
+                                                        工龄</td>
+                                                    <td>31
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>最高学位</td>
+                                                    <td>
+                                                    </td>
+                                                    <td>
+                                                        新的社会阶层</td>
+                                                    <td>
+                                                    </td>
+                                                    <td>
+                                                        困难党员类型</td>
+                                                    <td>
+                                                    </td>
+
+
+                                                </tr>
+                                                <tr>
+                                                    <td>政治面貌</td>
+                                                    <td>中共党员</td>
+                                                    <td>农民工标识</td>
+                                                    <td></td>
+                                                    <td>一线情况</td>
+                                                    <td>农业生产第一线</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>是否两新组织党建工作指导员</td>
+                                                    <td></td>
+                                                    <td>组织关系是否在服务中心管理</td>
+                                                    <td>否</td>
+                                                    <td>主要任职单位
+                                                    </td>
+                                                    <td>姜楼镇姜楼村</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>劳务派遣人员标识
+                                                    </td>
+                                                    <td></td>
+                                                    <td>生活不能自理丧失劳动能力
+
+                                                    </td>
+                                                    <td></td>
+                                                    <td>参加基层党组织定期评议
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>旁听基层党委会议
+                                                    </td>
+                                                    <td></td>
+                                                    <td>失联党员失去联系时间
+                                                    </td>
+                                                    <td></td>
+                                                    <td>失联党员失去联系时间</td>
+                                                    <td></td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-space">
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t3'>中共党员党籍信息集</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">添加</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder  ver-table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>入党日期</td>
+                                                    <td>1994-6-1</td>
+                                                    <td>转正日期
+                                                    </td>
+                                                    <td>2004-5-1</td>
+                                                    <td>转正情况</td>
+                                                    <td>按期转正</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>加入中共组织的类别</td>
+                                                    <td>团员“推优”</td>
+                                                    <td>批准入党的党组织名称</td>
+                                                    <td>中共姜楼镇委</td>
+                                                    <td>批准入党日期</td>
+                                                    <td>2003-5-30</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>入党介绍人</td>
+                                                    <td>孟祥实</td>
+                                                    <td>入党志愿书编号</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-space">
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t4'>工作岗位信息集</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">添加</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder  ver-table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>工作岗位</td>
+                                                    <td>从事农业生产人员</td>
+                                                    <td>岗位开始日期
+                                                    </td>
+                                                    <td></td>
+                                                    <td>岗位截止日期
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>工作岗位补充</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-space">
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t5'>学历信息集</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">添加</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder">
+                                            <thead>
+                                                <th></th>
+                                                <th>
+                                                    学历</th>
+                                                <th> 所学专业类别</th>
+                                                <th>
+                                                    所学专业名称</th>
+                                                <th> 学校(单位)名称</th>
+                                                <th> 所学专业名称</th>
+                                                <th>
+                                                    入学日期</th>
+                                                <th> 毕业日期</th>
+                                                <th>
+                                                    学习完成情况</th>
+                                                <th> 教育类别</th>
+                                                <th> 操作</th>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+
+                                                    <td colspan='13' class='text-center'>没有数据</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-xs">添加</button>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-space">
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t6'>学位信息集</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">添加</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder">
+                                            <thead>
+                                                <th></th>
+                                                <th>
+                                                    学位</th>
+                                                <th> 学位取得方式</th>
+                                                <th>
+                                                    学位授予日期</th>
+                                                <th> 学位授予单位</th>
+                                                <th> 操作</th>
+                                            </thead>
+                                            <tbody>
+                                                <td class="text-center" colspan='5'>没有数据</td>
+                                                <td><button type="button" class="btn btn-xs">添加</button></td>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-space">
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t7'>中共党员任党组织职务信息集</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">添加</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder">
+                                            <thead>
+                                                <th></th>
+                                                <th>
+                                                    任职党组织名称</th>
+                                                <th> 任职党组织名称补</th>
+                                                <th> 职务名称</th>
+                                                <th> 职级</th>
+                                                <th>
+                                                    任职方式</th>
+                                                <th> 任职起始日期</th>
+                                                <th> 当前任职状态</th>
+                                                <th> 任职结束日期</th>
+                                                <th>
+                                                    初次担任该职务时间</th>
+                                                <th> 是否换届当选</th>
+                                                <th> 连任情况</th>
+                                                <th> 届中新调整担任职务标识
+                                                </th>
+                                                <th>操作</th>
+                                            </thead>
+                                            <tbody>
+                                                
+                                                <tr>
+                                            	<td>1</td>
+                                                <td>中共章丘市姜楼镇姜楼村党支部</td>
+                                                <td>中共姜楼镇姜楼村党支部</td>
+                                                <td>书记</td>
+                                                <td></td>
+                                                <td>会议选举任职</td>
+                                                <td></td>
+                                                <td>在任</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                        <div class="btn-wrapper"><button type="button" class="btn btn-xs">编辑</button><button type="button" class="btn btn-xs">删除</button></div>
+                                                </td>
+                                               </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-space">
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t8'>单位任职情况信息集</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">添加</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder">
+                                            <thead>
+                                                <th></th>
+                                                <th>
+                                                    任职机构</th>
+                                                <th> 任职机构名称补 </th>
+                                                <th>职务名称
+                                                </th>
+                                                <th> 职务说明</th>
+                                                <th> 职级</th>
+                                                <th> 任职方式</th>
+                                                <th> 初次担任该职务时间</th>
+                                                <th> 任职状态</th>
+                                                <th> 担任现职务时间</th>
+                                                <th> 是否换届当选</th>
+                                                <th> 连任情况</th>
+                                                <th> 届中新调整担任职务标识</th>
+                                                <th> 操作</th>
+                                            </thead>
+                                            <tbody>
+ 											  <tr>
+                                            	<td>1</td>
+                                                <td>姜楼镇姜楼村</td>
+                                                <td>姜楼镇姜楼村</td>
+                                                <td>委员</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>会议选举任职</td>
+                                                <td></td>
+                                                <td>在任</td>
+                                                <td></td>
+                                                <td>是</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                        <div class="btn-wrapper"><button type="button" class="btn btn-xs">编辑</button><button type="button" class="btn btn-xs">删除</button></div>
+                                                </td>
+                                               </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row-space">
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t9'>专业技术任职资格（职称）信息集</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">添加</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder">
+                                            <thead>
+                                                <th></th>
+                                                <th>
+                                                    专业技术任职资格</th>
+                                                <th> 取得资格日期</th>
+                                                <th> 取得资格途径</th>
+                                                <th>
+                                                    专业技术职务级别</th>
+                                                <th> 操作</th>
+
+                                            </thead>
+                                            <tbody>
+                                                <td class="text-center" colspan='5'>没有数据</td>
+
+                                                <td><button type="button" class="btn btn-xs">添加</button></td>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-space">
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t10'>党员增加情况信息集</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">添加</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder">
+                                            <thead>
+                                                <th></th>
+                                                <th> 增加时间</th>
+                                                <th> 党员增加</th>
+                                                <th> 党员增加备注</th>
+                                                <th> 相关介绍信</th>
+                                                <th> 党员新发展时学历</th>
+                                                <th> 是否属整建制转入 </th>
+                                                <th> 操作</th>
+
+                                            </thead>
+                                            <tbody>
+                                            	<tr>
+                                            	     <td>1</td>
+                                                     <td>2003-5-1</td>
+                                                     <td>新入党</td>
+                                               		 <td></td>
+                                                	 <td></td>
+                                                     <td></td>
+                                                     <td></td>
+		                                             <td>
+		                                                        <div class="btn-wrapper"><button type="button" class="btn btn-xs">编辑</button><button type="button" class="btn btn-xs">删除</button></div>
+		                                             </td>
+                                               </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-space">
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t11'>党员减少情况信息集</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">添加</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder">
+                                            <thead>
+                                                <th> </th>
+
+                                                <th>减少时间 </th>
+                                                <th> 党员减少 </th>
+                                                <th>党员减少原因 </th>
+                                                <th>党员减少备注 </th>
+                                                <th>
+                                                    相关的介绍信 </th>
+                                                <th> 是否属整建制转出 </th>
+                                                <th> 操作</th>
+
+                                            </thead>
+                                            <tbody>
+                                                <td class="text-center" colspan='7'>没有数据</td>
+
+                                                <td><button type="button" class="btn btn-xs">添加</button></td>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-space">
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t12'>党员奖励信息集</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">添加</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder">
+                                            <thead>
+                                                <th> </th>
+                                                <th>奖励、荣誉称号或荣誉奖章代码</th>
+                                                <th>
+                                                    奖励批准日期</th>
+                                                <th> 奖励批准机关名称</th>
+                                                <th> 批准奖励机关级别</th>
+                                                <th> 奖励原因</th>
+                                                <th>
+                                                    奖励说明</th>
+                                                <th> 奖励标识</th>
+                                                <th> 操作</th>
+
+                                            </thead>
+                                            <tbody>
+                                                <td class="text-center" colspan='8'>没有数据</td>
+
+                                                <td><button type="button" class="btn btn-xs">添加</button></td>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-space">
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t13'>党员惩戒信息子集</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">添加</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder">
+                                            <thead>
+                                                <th></th>
+                                                <th>惩戒代码 </th>
+                                                <th>惩戒批准日期</th>
+                                                <th> 惩戒批准机关名称</th>
+                                                <th>
+                                                    批准惩戒机关级别</th>
+                                                <th> 惩戒原因</th>
+                                                <th> 惩戒说明</th>
+                                                <th> 操作</th>
+
+                                            </thead>
+                                            <tbody>
+                                                <td class="text-center" colspan='7'>没有数据</td>
+
+                                                <td><button type="button" class="btn btn-xs">添加</button></td>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-space">
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t14'>培训信息集</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">添加</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder">
+                                            <thead>
+                                                <th></th>
+                                                <th>培训类别</th>
+                                                <th> 培训专业名称</th>
+                                                <th> 培训起始日期</th>
+                                                <th> 培训结束日期</th>
+                                                <th>
+                                                    培训班名称</th>
+                                                <th> 培训主办单位名称</th>
+                                                <th> 培训完成情况</th>
+                                                <th> 教育培训类型</th>
+                                                <th> 操作</th>
+                                            </thead>
+                                            <tbody>
+                                            	<tr>
+                                            	     <td>1</td>
+                                                     <td>在职培训</td>
+                                                     <td></td>
+                                               		 <td>2015-09-04</td>
+                                                	 <td>2015-09-05</td>
+                                                     <td></td>
+                                                     <td></td>
+                                                     <td>结业</td>
+                                                     <td>农村党组织书记培训</td>
+		                                             <td>
+		                                                <div class="btn-wrapper"><button type="button" class="btn btn-xs">编辑</button><button type="button" class="btn btn-xs">删除</button></div>
+		                                             </td>
+                                               </tr>
+                                               <tr>
+                                            	     <td>1</td>
+                                                     <td>在职培训</td>
+                                                     <td></td>
+                                               		 <td>2011-06-02</td>
+                                                	 <td>2011-06-04</td>
+                                                     <td></td>
+                                                     <td></td>
+                                                     <td>结业</td>
+                                                     <td>农村党组织书记培训</td>
+		                                             <td>
+		                                                <div class="btn-wrapper"><button type="button" class="btn btn-xs">编辑</button><button type="button" class="btn btn-xs">删除</button></div>
+		                                             </td>
+                                               </tr>
+                                               <tr>
+                                            	     <td>1</td>
+                                                     <td>在职培训</td>
+                                                     <td></td>
+                                               		 <td>2011-05-21</td>
+                                                	 <td>2011-05-22</td>
+                                                     <td></td>
+                                                     <td></td>
+                                                     <td>结业</td>
+                                                     <td>农村党组织书记培训</td>
+		                                             <td>
+		                                                <div class="btn-wrapper"><button type="button" class="btn btn-xs">编辑</button><button type="button" class="btn btn-xs">删除</button></div>
+		                                             </td>
+                                               </tr>
+                                               <tr>
+                                            	     <td>1</td>
+                                                     <td>在职培训</td>
+                                                     <td></td>
+                                               		 <td>2010-10-06</td>
+                                                	 <td>2010-10-10</td>
+                                                     <td></td>
+                                                     <td></td>
+                                                     <td>结业</td>
+                                                     <td>农村党组织书记培训</td>
+		                                             <td>
+		                                                <div class="btn-wrapper"><button type="button" class="btn btn-xs">编辑</button><button type="button" class="btn btn-xs">删除</button></div>
+		                                             </td>
+                                               </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-space">
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t15'>党的代表大会代表情况信息集</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">添加</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder">
+                                            <thead>
+                                                <th></th>
+                                                <th>
+                                                    党的代表大会代表标识</th>
+                                                <th> 入选日期</th>
+                                                <th> 终止日期</th>
+                                                <th> 终止代表资格原因</th>
+                                                <th> 参加各级党委组织培训标识</th>
+                                                <th> 党员领导干部标识</th>
+                                                <th> 操作</th>
+                                            </thead>
+                                            <tbody>
+                                                <td class="text-center" colspan='7'>没有数据</td>
+
+                                                <td><button type="button" class="btn btn-xs">添加</button></td>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-space">
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t16'>民主评议信息集</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">添加</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder">
+                                            <thead>
+                                                <th></th>
+                                                <th>开展评议日期</th>
+                                                <th> 结束评议日期</th>
+                                                <th> 评议状态</th>
+                                                <th> 评议结果</th>
+                                                <th> 评议奖惩原因</th>
+                                                <th> 评议奖惩情况</th>
+                                                <th> 评议组织级别</th>
+                                                <th> 优点</th>
+                                                <th> 缺点</th>
+                                                <th> 整改方向</th>
+                                                <th> 操作</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td><a href="#" class='td-out' data-toggle="modal" data-target="#modal-2">2015-11-6</a></td>
+                                                    <td><a href="#" class='td-out' data-toggle="modal" data-target="#modal-2">2015-11-12</a></td>
+                                                    <td><a href="#" class='td-out' data-toggle="modal" data-target="#modal-2">评议结束</a></td>
+                                                    <td><a href="#" class='td-out' data-toggle="modal" data-target="#modal-2">合格</a></td>
+                                                    <td>
+                                                        <a href="#" class='td-out' data-toggle="modal" data-target="#modal-2"></a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class='td-out' data-toggle="modal" data-target="#modal-2"></a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class='td-out' data-toggle="modal" data-target="#modal-2"></a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class='td-out' data-toggle="modal" data-target="#modal-2"></a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class='td-out' data-toggle="modal" data-target="#modal-2"></a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class='td-out' data-toggle="modal" data-target="#modal-2"></a>
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="btn-wrapper"><button type="button" class="btn btn-xs">编辑</button><button type="button" class="btn btn-xs">删除</button></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-space">
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t17'>出国（境）信息集</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">添加</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder">
+                                            <thead>
+                                                <th></th>
+                                                <th>
+                                                    所至国家（地区）名称</th>
+                                                <th> 出国（境）目的</th>
+                                                <th> 出国（境）日期</th>
+                                                <th> 回国日期</th>
+                                                <th> 出国（境）备注</th>
+                                                <th> 出国（境）身份</th>
+                                                <th> 回国情况</th>
+                                                <th> 出国党员与党组织联系情况</th>
+                                                <th> 恢复组织生活情况</th>
+                                                <th> 操作</th>
+                                            </thead>
+                                            <tbody>
+                                                <td class="text-center" colspan='10'>没有数据</td>
+
+                                                <td><button type="button" class="btn btn-xs">添加</button></td>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-space">
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t18'>流出党员信息集</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">添加</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder">
+                                            <thead>
+                                                <th></th>
+                                                <th>
+                                                    流出时间</th>
+                                                <th> 流出类别</th>
+                                                <th> 流动党员活动证号</th>
+                                                <th> 是否跨省流动</th>
+                                                <th> 外出流向</th>
+                                                <th> 外出工作单位</th>
+                                                <th> 在外联系方式</th>
+                                                <th> 是否掌握流向</th>
+                                                <th> 流向党组织名称</th>
+                                                <th> 流出原因</th>
+                                                <th> 操作</th>
+                                            </thead>
+                                            <tbody>
+                                                <td class="text-center" colspan='11'>没有数据</td>
+
+                                                <td><button type="button" class="btn btn-xs">添加</button></td>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-space">
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t19'>选聘高校毕业生到村任职情况信息集</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">添加</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder">
+                                            <thead>
+                                                <th></th>
+                                                <th>到村标识</th>
+                                                <th>到村任职开始日期</th>
+                                                <th>到村任职结束日期</th>
+                                                <th>兼任村团组织职务</th>
+                                                <th>流出方向</th>
+                                                <th>选聘标识</th>
+                                                <th>操作</th>
+                                                <th> 操作</th>
+                                            </thead>
+                                            <tbody>
+                                                <td class="text-center" colspan='8'>没有数据</td>
+
+                                                <td><button type="button" class="btn btn-xs">添加</button></td>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-space">
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t20'>离退信息集</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">添加</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder">
+                                            <thead>
+                                                <th></th>
+                                                <th>离退类别</th>
+                                                <th> 离退日期</th>
+                                                <th> 离退说明</th>
+                                                <th> 操作</th>
+                                            </thead>
+                                            <tbody>
+                                                <td class="text-center" colspan='4'>没有数据</td>
+
+                                                <td><button type="button" class="btn btn-xs">添加</button></td>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-space">
+                                <div class="e-box">
+                                    <div class="e-box-title">
+                                        <h2 class=" margin-r20" id='t21'>中共党员交纳党费信息集</h2>
+                                        <div class="e-box-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn">添加</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="e-tab-content">
+                                        <table class="e-table e-clborder">
+                                            <thead>
+                                                <th></th>
+                                                <th>起始日期</th>
+                                                <th> 截至日期</th>
+                                                <th> 实缴纳党费数额</th>
+                                                <th> 应缴纳党费数额</th>
+                                                <th> 缴纳党费备注</th>
+                                                <th> 操作</th>
+                                            </thead>
+                                            <tbody>
+                                                <td class="text-center" colspan='6'>没有数据</td>
+
+                                                <td><button type="button" class="btn btn-xs">添加</button></td>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-7" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div id="info" class="e-box m-b">
+                    <div class="e-box-title">
+                        <h2>修改密码</h2>
+                        <div class="e-box-toolbar">
+                            <button type="button" class="close m-t-sm" data-dismiss="modal">
+									<span aria-hidden="true">&times;</span>
+									<span class="sr-only">Close</span></button>
+                        </div>
+                    </div>
+                    <div class="e-box-content">
+                        <div class="p-sm padding-b0">
+                            <div class="clearfix e-form">
+                                <div class="form-group clearfix margin-b0">
+                                    <div class="form-item">
+                                        <span class="form-item-name">输入新密码：</span>
+                                        <input id="" type="text" placeholder="" class="form-item-input">
+                                    </div>
+
+                                    <div class="form-item">
+                                        <span class="form-item-name">确认新密码：</span>
+                                        <input id="" type="text" placeholder="" class="form-item-input">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="m-t-sm m-b-sm">
+                        <div class="etal-c m-b-sm">
+                            <a href="#" class="btn btn-info">保存</a>
+                            <div class="btn btn-danger" data-dismiss="modal">取消</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-2" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div id="info" class="e-box m-b">
+                    <div class="e-box-title">
+                        <h2>民主评议信息集</h2>
+                        <div class="e-box-toolbar"><button type="button" class="close m-t-sm" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button></div>
+                    </div>
+                    <div class="e-box-content">
+                        <div class="p-sm">
+                            <div class="e-form">
+                                <div class="form-group clearfix">
+                                    <div class="form-item"><span class="form-item-name">开展评议日期</span><span class="form-item-prefix">：</span>
+                                        <input id="" type="text" placeholder="" class="form-item-input">
+                                    </div>
+                                    <div class="form-item"><span class="form-item-name">结束评议日期</span><span class="form-item-prefix">：</span>
+                                        <input id="" type="text" placeholder="" class="form-item-input">
+                                    </div>
+                                    <div class="form-item"><span class="form-item-name">评议状态</span><span class="form-item-prefix">：</span>
+                                        <input id="" type="text" placeholder="" class="form-item-input">
+                                    </div>
+                                    <div class="form-item"><span class="form-item-name">评议结果</span><span class="form-item-prefix">：</span>
+                                        <input id="" type="text" placeholder="" class="form-item-input">
+                                    </div>
+                                    <div class="form-item"><span class="form-item-name">评议奖惩原因</span><span class="form-item-prefix">：</span>
+                                        <input id="" type="text" placeholder="" class="form-item-input">
+                                    </div>
+                                    <div class="form-item"><span class="form-item-name">评议组织级别</span><span class="form-item-prefix">：</span>
+                                        <input id="" type="text" placeholder="" class="form-item-input">
+                                    </div>
+                                    <div class="form-item"><span class="form-item-name">优点</span><span class="form-item-prefix">：</span>
+                                        <input id="" type="text" placeholder="" class="form-item-input">
+                                    </div>
+                                    <div class="form-item"><span class="form-item-name">缺点</span><span class="form-item-prefix">：</span>
+                                        <input id="" type="text" placeholder="" class="form-item-input">
+                                    </div>
+                                    <div class="form-item"><span class="form-item-name">整改方向</span><span class="form-item-prefix">：</span>
+                                        <input id="" type="text" placeholder="" class="form-item-input">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="m-t-sm m-b-sm">
+                        <div class="etal-c m-b-sm">
+
+                            <div class="btn" data-dismiss="modal">保存</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-1.10.2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        //- $(".e-main").css("min-height",$(window).height() - 56  + "px")
+        // $(function(){
+        // 	var topH = $('#top').height();
+        //  	var gH = $("page-title-holder").height();
+        //  	$(".e-main").css("min-height",$(window).height() - 56 + "px")
+        // 	$(".e-main .main-box-content ,.e-main .main-box-content .withtree-content").css("min-height",$(window).height() - 56 - 55 - 40 + "px")
+        // 	$(".white-bg.padding-10").css("min-height",$(window).height() - 56 - 78 - 82  + "px")
+        // })
+    </script>
+    <!-- Scripts -->
+    <script src="../js/deploy/parallax.js"></script>
+    <script>
+			// Pretty simple huh?
+			var scene = document.getElementById('topwave');
+			var parallax = new Parallax(scene);
+			$('.sub-nav-li .sub-nav-a').closest('.sub-nav-li').find('ul.collapse').collapse('hide');
+			$('.sub-nav-a[data-toggle="collapse"]').on('click', function() {
+				$('.sub-nav-li .sub-nav-a').closest('.sub-nav-li').find('ul.collapse').collapse('hide');
+				$(this).closest('.sub-nav-li').find('ul.collapse').collapse('toggle');
+			})
+			
+			$('.minify-toggle').on('click', function() {
+				$('body').toggleClass('layout-minify')
+			})
+		</script>
+    <script src='../js/jstree.min.js'></script>
+    <script>
+        $('.minify-toggle').on('click', function() {
+            $('body').toggleClass('layout-minify')
+        });
+        $('#tree')
+            .on('click.jstree', function(e, data) {
+                var $this = $(e.target);
+                if ($this[0].tagName === 'A') {
+                    var href = $this.attr('href');
+                    if (href && href[0] !== '#') {
+                        location.href = href;
+                    }
+                }
+            })
+            // .on("loaded.jstree", function(e, data) {
+            //     data.inst.open_all(-1); // -1 opens all nodes in the container
+            // })
+            .jstree();
+        // $('#tree').show_all();
+        // Pretty simple huh?
+//      var scene = document.getElementById('topwave');
+//      var parallax = new Parallax(scene);
+//      $('.sub-nav-li .sub-nav-a').closest('.sub-nav-li').find('ul.collapse').collapse('hide');
+//      $('.sub-nav-a[data-toggle="collapse"]').on('click', function() {
+//          $('.sub-nav-li .sub-nav-a').closest('.sub-nav-li').find('ul.collapse').collapse('hide');
+//          $(this).closest('.sub-nav-li').find('ul.collapse').collapse('toggle');
+//      })
+    </script>
+</body>
+
+</html>

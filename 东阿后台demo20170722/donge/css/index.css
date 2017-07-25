@@ -1,0 +1,286 @@
+.boxbg{
+	position: relative;
+	width:100%;
+	height:770px;
+	background:#EEEEEE url(../img/dongebg.jpg) no-repeat center center;
+	background-size:cover;
+	background-attachment:scroll;
+	background-clip: content-box;
+	overflow-y:hidden;
+	overflow-x:hidden;
+	margin: 0 auto;
+}
+.donge-lis{
+	width: 1000px;
+	height: 260px;
+	margin: 0 auto;
+	margin-top: 380px;
+}
+.donge-lis ul li{
+	float: left;
+	width: 210px;
+	height: 210px;
+	margin: 0 10px;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	-webkit-box-shadow:3px 3px 10px rgba(114, 114, 114, .8);  
+    -moz-box-shadow:3px 3px 10px rgba(114, 114, 114, .8);  
+    box-shadow:3px 3px 10px rgba(114, 114, 114, .8); 
+    list-style: none;
+}
+.donge-lis ul li a img{
+	margin: 30px 0 20px;
+}
+.donge-lis ul li a{
+	display:block;
+	width: 210px;
+	height: 210px;
+	color: #fff;
+	text-decoration: none;
+}
+.donge-lis ul li a.alis-a{
+	background: #5562ca;
+}
+.donge-lis ul li a.alis-b{
+	background: #00bb9c;
+}
+.donge-lis ul li a.alis-c{
+	background: #ea8010;
+}
+.donge-lis ul li a.alis-d{
+	background: #1fb4ec;
+}
+.donge-lis ul li a.alis-e{
+	background: #ff6460;
+}
+.dongecopy{
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 90px;
+}
+
+/**********东阿智慧党建党务台账平台************/
+.taibg{
+	position: relative;
+	width:100%;
+	height:900px;
+	background:#EEEEEE url(../img/taizbg.jpg) no-repeat top center;
+	background-size:cover;
+	background-attachment:scroll;
+	background-clip: content-box;
+	overflow-y:hidden;
+	margin: 0 auto;
+}
+.taiz-con{
+	width: 1200px;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 400px;
+}
+.taiz-con h2{
+	font-size: 38px;
+	line-height: 60px;
+	font-weight: normal;
+	text-align: center;
+	color: #000;
+}
+.cunw{
+	width: 648px;
+	height: 140px;
+	margin: 0 auto;
+	border-top:1px solid #eee;
+	border-left:1px solid #eee;
+	border-bottom:1px solid #eee;
+}
+.cunw ul{
+	margin: 0;
+}
+.cunw ul li{
+	float: left;
+	width: 215px;
+	height: 140px;
+	border-right:1px solid #eee;
+	text-align: center;
+	background: #f9f9f8;
+	list-style: none;
+}
+.cunw ul li a{
+	display: block;
+	width: 215px;
+	height: 140px;
+	text-decoration:none;	
+}
+.cunw ul li a img{
+	 margin:20px 0 20px;
+}
+.cunw ul li a p{
+	font-size: 18px;
+	line-height:30px ;
+	color: #333;
+}
+.dangw{
+	width: 432px;
+	height: 140px;
+	margin: 0 auto;
+	border-top:1px solid #eee;
+	border-left:1px solid #eee;
+	border-bottom:1px solid #eee;
+}
+.dangw ul{
+	margin: 0;
+}
+.dangw ul li{
+	float: left;
+	width: 215px;
+	height: 140px;
+	border-right:1px solid #eee;
+	text-align: center;
+	background: #f9f9f8;
+	list-style: none;
+}
+.dangw ul li a{
+	display: block;
+	width: 215px;
+	height: 140px;
+	text-decoration:none;	
+}
+.dangw ul li a img{
+	 margin:20px 0 20px;
+}
+.dangw ul li a p{
+	font-size: 18px;
+	line-height:30px ;
+	color: #333;
+}
+/**********东阿智慧党建教育平台************/
+.dangybg{
+	position: relative;
+	width:100%;
+	height:900px;
+	background:#EEEEEE url(../img/dangybg.jpg) no-repeat top center;
+	background-size:cover;
+	background-attachment:scroll;
+	background-clip: content-box;
+	overflow-y:hidden;
+	margin: 0 auto;
+}
+.dangy-lis{
+	width: 1024px;
+	height: 260px;
+	margin: 0 auto;
+	margin-top: 460px;
+}
+.dangy-lis ul li{
+	float: left;
+	width: 210px;
+	height: 210px;
+	margin: 0 130px;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	-webkit-box-shadow:3px 3px 10px rgba(114, 114, 114, .8);  
+    -moz-box-shadow:3px 3px 10px rgba(114, 114, 114, .8);  
+    box-shadow:3px 3px 10px rgba(114, 114, 114, .8); 
+}
+.dangy-lis ul li a img{
+	margin: 30px 0 20px;
+}
+.dangy-lis ul li a{
+	display:block;
+	width: 210px;
+	height: 210px;
+	color: #fff;
+	text-decoration: none;
+}
+.dangy-lis ul li a.alis-aa{
+	background: #1fb4ec;
+}
+.dangy-lis ul li a.alis-bb{
+	background: #ff6460;
+}
+.dangycopy{
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 110px;
+}
+/**********登录************/
+.loginbg{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background:#EEEEEE url(../img/loginbg.jpg) no-repeat top center;
+	background-size:cover;
+	background-attachment:scroll;
+	background-clip: content-box;
+	overflow-y:hidden;
+	margin: 0 auto;
+}
+.login-t{
+	width: 100%;
+	height: 80px;
+	margin-top: 160px;
+	text-align: center;
+}
+.login-t img{
+	height: 80px;
+}
+.login-c{
+	width: 400px;
+	height: 300px;
+	background: #fff;
+	box-shadow: 0 0 5px 3px rgba(0,0,0,0.3);
+	border-radius: 4px;
+	margin: 50px auto 0;
+	padding: 30px 40px;
+	box-sizing: border-box;
+}
+.login-row{
+	width: 100%;
+	display: inline-block;
+}
+.login-row label{
+	line-height: 40px;
+	float: left;
+	font-size: 18px;
+	width: 90px;
+}
+.login-row .txt{
+	width: 200px;
+	height: 30px;
+	float: left;
+	border: 1px solid #f9cf88;
+}
+.login-row .change{
+	float: right;
+	text-decoration: underline;
+	font-size: 12px;
+	line-height: 30px;
+	margin-right: 10px;
+}
+.login-row .btn-dl,.login-row .btn-qk{
+	width: 130px;
+	height: 40px;
+	margin: 0 10px;
+	display: inline-block;
+	border: none;
+}
+.login-row .btn-dl{
+	background: url(../img/btn-dl.png) no-repeat center center;
+}
+.login-row .btn-qk{
+	background: url(../img/btn-qk.png) no-repeat center center;
+}
+.login-foot{
+	position: absolute;
+	bottom: 15px;
+	width: 100%;
+	height: 30px;
+	left: 0;
+	margin-top: 60px;
+	background: url(../img/foot.png) no-repeat center center;
+}
